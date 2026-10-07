@@ -1,0 +1,888 @@
+# sample_id=2449/rev_003_de4c350c exec_index=2 ok=False perf_lines=30 vm_events=30 battery_pct=58 soc_temp_millic=44200 battery_temp_c=32.5 charging=False preflight_started=2026-09-13T15:34:40.153490+00:00 started=2026-09-13T15:34:42.711569+00:00 ts=2026-09-13T15:36:47.995398+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/generated_widget.dart:12:3 • prefer_const_constructors_in_immutables
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           21.5s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,184ms
+D/DecorView[](30696): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30696): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30696): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (30696): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=344ms latency=379ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=1 wall=344ms seq=4 late=379ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=344ms seq=4 late=379ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=384ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (30696): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=1ms latency=724ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=1 wall=344ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=344ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=384ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=344ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(30696): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(30696): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (30696): PerfMonitor longMsg : seq=8 plan=18:35:22.741 late=347ms wall=1644ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (30696): PerfMonitor doFrame : time=1644ms vsyncFrame=0 latency=347ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1644ms seq=8 late=347ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(30696): Skipped 93 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(30696): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x739554a, mIsProjectionMode = false
+W/Looper  (30696): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1562ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (30696): 00:00 +0: Performance Benchmark
+E/hmark_containe(30696): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(30696): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(30696): setSchedFifo pid:30696, mode:3
+D/DecorView[](30696): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](30696): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30696): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(30696): Installing profile for com.example.benchmark_container
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #7      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30696): #8      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #9      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #10     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #11     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #12     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #13     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #14     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #15     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #16     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #17     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #18     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #19     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #20     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #21     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #22     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #23     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #24     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #25     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #26     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #27     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #28     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #29     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #30     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #31     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #32     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #33     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #34     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7264)
+I/flutter (30696): #35     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7279)
+I/flutter (30696): #36     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #37     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #39     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #40     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #41     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #42     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #43     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #44     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #45     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #46     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #47     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #48     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30696): #49     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #50     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #51     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #52     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #53     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #54     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #55     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #56     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #57     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #58     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #59     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #60     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #63     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #64     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #65     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #66     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #67     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #68     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30696): #69     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #70     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #71     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #72     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (30696): #73     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #74     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #75     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #76     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #77     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #78     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #79     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #80     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #81     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (30696): #82     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #83     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #84     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #85     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #86     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #87     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #88     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30696): #89     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #90     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #91     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): #92     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30696): #93     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #94     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #95     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30696): #96     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30696): #97     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30696): #98     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30696): #99     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 15060µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2917µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3011µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3156µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3718µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3828µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3745µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2966µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3168µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3457µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3885µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2791µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3075µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3060µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2651µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3669µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2861µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3118µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3249µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3831µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3531µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3930µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 4022µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3714µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3628µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3517µs
+[spm]: ProfilerData event received.
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3546µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 2955µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3520µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): type '_Stub' is not a subtype of type 'ButtonStyle?'
+I/flutter (30696): #0      _GeneratedWidgetState._deleteButton (package:benchmark_container/generated_widget.dart:30)
+I/flutter (30696): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:50)
+I/flutter (30696): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30696): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30696): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30696): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30696): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30696): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30696): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30696): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30696): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30696): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30696): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30696): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30696): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30696): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30696): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30696): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30696): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30696): [SPM:perf] 698a51a  buildSpan: 3862µs
+I/flutter (30696): [spm] Performance monitoring completed for 698a51a
+I/flutter (30696): Multiple exceptions (31) were detected during the running of the current test, and at least one was unexpected.
+I/flutter (30696): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter (30696): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter (30696): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter (30696): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter (30696): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter (30696): <asynchronous suspension>
+I/flutter (30696): (elided 6 frames from dart:async)
+I/flutter (30696): 01:10 +0: Performance Benchmark [E]
+I/flutter (30696):   Test failed. See exception logs above.
+I/flutter (30696):   The test description was: Performance Benchmark
+I/flutter (30696):   
+I/flutter (30696): 01:10 +0 -1: (tearDownAll)
+I/flutter (30696): 01:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/2449/redmi9t/raw/20260913-181855/rev_003_de4c350c/e2.jsonl
+[spm]: Reverting injection...
+3 issues found. (ran in 1.0s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:38857/bY5ZL_LzQb0=/
+[spm]: Detected VM service URI: ws://127.0.0.1:38857/bY5ZL_LzQb0=/ws
+VMServiceFlutterDriver: Isolate found with number: 6168118949841631
+VMServiceFlutterDriver: Isolate 6168118949841631 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

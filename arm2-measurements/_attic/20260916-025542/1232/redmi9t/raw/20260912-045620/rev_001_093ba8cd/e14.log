@@ -1,0 +1,1033 @@
+# sample_id=1232/rev_001_093ba8cd exec_index=14 ok=False perf_lines=30 vm_events=30 battery_pct=61 soc_temp_millic=42900 battery_temp_c=31.2 charging=False preflight_started=2026-09-12T01:59:18.708880+00:00 started=2026-09-12T01:59:21.296060+00:00 ts=2026-09-12T02:01:25.187273+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Redundant initialization to 'null'. Try removing the initializer • lib/dependencies.dart:63:19 • avoid_init_to_null
+   info • The variable name 'core_status_active' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:169:15 • non_constant_identifier_names
+   info • The variable name 'core_status_lost' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:170:15 • non_constant_identifier_names
+   info • The variable name 'core_status_inactive' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:171:15 • non_constant_identifier_names
+   info • The variable name 'core_status_unknown' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:172:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_status_all' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:178:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_status_active' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:179:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_status_lost' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:180:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_status_inactive' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:181:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_status_unknown' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:182:15 • non_constant_identifier_names
+   info • The variable name 'core_filter_search_hint' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:183:15 • non_constant_identifier_names
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/generated_widget.dart:11:3 • prefer_const_constructors_in_immutables
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           21.2s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (34.5MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,553ms
+D/MiuiMultiWindowUtils(23593): freeform resolution args raw data:{  "zizhan":{    "freeform_args": {      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.168,"left_margin":0.484},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.1222,"left_margin":0.59745},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.2596,"left_margin":0.2624},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.213,"left_margin":0.3758}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.74,"top_margin":0.0753,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.5756,"top_margin":-1,"left_margin":0.0753},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":0.0753,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":-1,"left_margin":0.0753}}    },    "mini_freeform_args":{      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.165},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.165}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.293},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.293}}    }  },  "wide_default":{    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":0.125,"left_margin":0.392},        "horizontal_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":-1,"left_margin":0.6415},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":0.125,"left_margin":0.206},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":-1,"left_margin":0.456}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "vertical_landscape":{"aspect_ratio":-1, "original_ratio":0.144},        "horizontal_landscape":{"aspect_ratio":-1, "original_ratio":0.144}    }  },  "narrow_default": {    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":1,"original_scale":0.7182,"top_margin":0.142,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.8, "original_ratio":1,"original_scale":0.7182,"top_margin":-1,"left_margin":0.05},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":0.142,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":-1,"left_margin":0.05}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "vertical_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3},        "horizontal_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3}    }  },  "regular_default": {    "freeform_args": {      "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":1,"original_scale":0.7,"top_margin":0.109,"left_margin":-1},      "horizontal_portrait":{"aspect_ratio":0.6667, "original_ratio":1,"original_scale":0.6102,"top_margin":-1,"left_margin":0.026},      "vertical_landscape":{"asp
+E/MiuiMultiWindowUtils(23593): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(23593): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23593): false
+D/IS_CTS_MODE(23593): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23593): false
+D/IS_CTS_MODE(23593): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23593): false
+D/DecorView[](23593): getWindowModeFromSystem  windowmode is 1
+I/ForceDarkHelperStubImpl(23593): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+I/ForceDarkHelperStubImpl(23593): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+D/DecorView[](23593): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23593): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (23593): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=428ms latency=425ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=3 wall=416ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (23593): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=1ms latency=854ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=3 wall=416ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=428ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(23593): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(23593): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (23593): PerfMonitor longMsg : seq=8 plan=04:59:58.974 late=434ms wall=1948ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (23593): PerfMonitor doFrame : time=1948ms vsyncFrame=0 latency=434ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1948ms seq=8 late=434ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(23593): Skipped 110 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(23593): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0xca20cbb, mIsProjectionMode = false
+W/Looper  (23593): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1841ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (23593): 00:00 +0: Performance Benchmark
+E/hmark_containe(23593): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(23593): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(23593): setSchedFifo pid:23593, mode:3
+D/DecorView[](23593): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](23593): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23593): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(23593): Installing profile for com.example.benchmark_container
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #11     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (23593): #12     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #13     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #14     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #15     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #16     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #17     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #18     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #19     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #20     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #21     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #22     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #23     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #24     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #25     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #26     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #27     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #28     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #29     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #30     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #31     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #32     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #33     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #34     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #35     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #36     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #37     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #38     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7264)
+I/flutter (23593): #39     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7279)
+I/flutter (23593): #40     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #41     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #42     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #43     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #44     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #45     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #46     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #47     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #48     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #49     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #50     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #51     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #52     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (23593): #53     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #54     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #55     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #56     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #57     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #58     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #59     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #60     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #61     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #62     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #63     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #64     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #65     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #66     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #67     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #68     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #69     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #70     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #71     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #72     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (23593): #73     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #74     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #75     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #76     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (23593): #77     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #78     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #79     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #80     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #81     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #82     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #83     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #84     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #85     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (23593): #86     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #87     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #88     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #89     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #90     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #91     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): #92     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (23593): #93     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (23593): #94     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #95     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (23593): #96     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #97     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #98     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #99     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 17863µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 5327µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3855µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4296µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3995µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 8664µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3611µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3881µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4001µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3980µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4750µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3606µs
+[spm]: ProfilerData event received.
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3500µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4018µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3842µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4810µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4040µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3892µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3862µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3908µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4192µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4245µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3391µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3317µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3985µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4176µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4277µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 4111µs
+[spm]: ProfilerData event received.
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3244µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): type 'RenderSliverToBoxAdapter' is not a subtype of type 'RenderBox' of 'child'
+I/flutter (23593): #0      ContainerRenderObjectMixin.insert (package:flutter/src/rendering/object.dart:4495)
+I/flutter (23593): #1      MultiChildRenderObjectElement.insertRenderObjectChild (package:flutter/src/widgets/framework.dart:7193)
+I/flutter (23593): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6941)
+I/flutter (23593): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (23593): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (23593): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (23593): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4053)
+I/flutter (23593): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (23593): #8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (23593): #9      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (23593): #10     BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (23593): #11     BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (23593): #12     BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (23593): #13     WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (23593): #14     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (23593): #15     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (23593): #16     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (23593): #17     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (23593): #18     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (23593): #22     _invoke (dart:ui/hooks.dart:425)
+I/flutter (23593): #23     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (23593): #24     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (23593): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (23593): [SPM:perf] 698a51a  buildSpan: 3923µs
+I/flutter (23593): [spm] Performance monitoring completed for 698a51a
+I/flutter (23593): Multiple exceptions (31) were detected during the running of the current test, and at least one was unexpected.
+I/flutter (23593): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter (23593): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter (23593): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter (23593): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter (23593): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter (23593): <asynchronous suspension>
+I/flutter (23593): (elided 6 frames from dart:async)
+I/flutter (23593): 01:12 +0: Performance Benchmark [E]
+I/flutter (23593):   Test failed. See exception logs above.
+I/flutter (23593):   The test description was: Performance Benchmark
+I/flutter (23593):   
+I/flutter (23593): 01:12 +0 -1: (tearDownAll)
+I/flutter (23593): 01:13 +1 -1: Some tests failed.
+I/Choreographer(23593): Skipped 60 frames!  The application may be doing too much work on its main thread.
+W/Looper  (23593): PerfMonitor doFrame : time=4ms vsyncFrame=0 latency=1010ms procState=-1 historyMsgCount=3
+I/OpenGLRenderer(23593): Davey! duration=1021ms; Flags=0, FrameTimelineVsyncId=10738376, IntendedVsync=298704374904755, Vsync=298705374904715, InputEventId=0, HandleInputStart=298705385002406, AnimationStart=298705385009854, PerformTraversalsStart=298705385013395, DrawStart=298705386568864, FrameDeadline=298704391571421, FrameInterval=298705384666729, FrameStartTime=16666666, SyncQueued=298705387433812, SyncStart=298705387699385, IssueDrawCommandsStart=298705387896052, SwapBuffers=298705388824906, FrameCompleted=298705396750114, DequeueBufferDuration=36771, QueueBufferDuration=1155573, GpuCompleted=298705396750114, SwapBuffersCompleted=298705391105948, DisplayPresentTime=0, 
+[SPM:shot] wrote <ROOT>/dataset-new_samples/1232/redmi9t/shots/1232__rev_001_093ba8cd.png (28116 bytes)
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/1232/redmi9t/raw/20260912-045620/rev_001_093ba8cd/e14.jsonl
+[spm]: Reverting injection...
+14 issues found. (ran in 0.8s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:39741/IDWIQqEbi-w=/
+[spm]: Detected VM service URI: ws://127.0.0.1:39741/IDWIQqEbi-w=/ws
+VMServiceFlutterDriver: Isolate found with number: 1420448928243655
+VMServiceFlutterDriver: Isolate 1420448928243655 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

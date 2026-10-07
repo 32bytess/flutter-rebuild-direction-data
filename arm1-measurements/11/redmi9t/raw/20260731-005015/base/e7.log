@@ -1,0 +1,236 @@
+# sample_id=11/base exec_index=7 ok=True perf_lines=30 vm_events=30 battery_pct=78 soc_temp_millic=38300 battery_temp_c=27.8 charging=False preflight_started=2026-07-30T22:44:33.736438+00:00 started=2026-07-30T22:44:36.439048+00:00 ts=2026-07-30T22:46:41.448192+00:00
+[spm]: Running flutter analyze...
+Analyzing lib...                                                
+No issues found! (ran in 0.9s)
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           23.4s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (61.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      2,129ms
+D/DecorView[](14234): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](14234): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (14234): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=380ms latency=318ms running=0ms  procState=-1  historyMsgCount=2 (msgIndex=1 wall=380ms seq=4 late=318ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=322ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (14234): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=1ms latency=699ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=2 wall=380ms seq=4 late=318ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=322ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=380ms seq=4 late=318ms h=android.app.ActivityThread$H w=159)
+D/SurfaceView(14234): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(14234): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (14234): PerfMonitor longMsg : seq=8 plan=01:45:18.109 late=404ms wall=1733ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (14234): PerfMonitor doFrame : time=1733ms vsyncFrame=0 latency=404ms procState=-1 historyMsgCount=7 (msgIndex=2 wall=380ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=1733ms seq=8 late=404ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=4 wall=380ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer(14234): Skipped 98 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(14234): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x4d86cce, mIsProjectionMode = false
+W/Looper  (14234): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1644ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (14234): 00:00 +0: Performance Benchmark
+E/hmark_containe(14234): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(14234): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(14234): setSchedFifo pid:14234, mode:3
+D/DecorView[](14234): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](14234): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](14234): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(14234): Installing profile for com.example.benchmark_container
+E/AndroidRuntime(14657): FATAL EXCEPTION: IgExecutorV2 #19
+E/AndroidRuntime(14657): Process: com.instagram.android, PID: 14657
+E/AndroidRuntime(14657): java.lang.SecurityException: Too many PendingIntent created for uid 10256, aborting Key{broadcastIntent pkg=com.instagram.android intent=act=657d0b3d96404H206b576daH0H29 dat=ig://notif/direct/8702490330%3Bthread_id%3A340282366841710301244260090381093605543 pkg=com.instagram.android cmp=com.instagram.android/com.instagram.notifications.push.ClearNotificationReceiver flags=0x4000000 u=0} requestCode=64278
+E/AndroidRuntime(14657): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)
+E/AndroidRuntime(14657): 	at android.os.Parcel.createException(Parcel.java:2410)
+E/AndroidRuntime(14657): 	at android.os.Parcel.readException(Parcel.java:2393)
+E/AndroidRuntime(14657): 	at android.os.Parcel.readException(Parcel.java:2335)
+E/AndroidRuntime(14657): 	at android.app.IActivityManager$Stub$Proxy.getIntentSenderWithFeature(IActivityManager.java:7065)
+E/AndroidRuntime(14657): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(14657): 	at X.00ry.A02(:8)
+E/AndroidRuntime(14657): 	at X.00ry.invoke(:37)
+E/AndroidRuntime(14657): 	at java.lang.reflect.Proxy.invoke(Proxy.java:1009)
+E/AndroidRuntime(14657): 	at $Proxy2.getIntentSenderWithFeature(Unknown Source)
+E/AndroidRuntime(14657): 	at android.app.PendingIntent.getBroadcastAsUser(PendingIntent.java:652)
+E/AndroidRuntime(14657): 	at android.app.PendingIntent.getBroadcast(PendingIntent.java:635)
+E/AndroidRuntime(14657): 	at X.07hp.A03(:8)
+E/AndroidRuntime(14657): 	at X.0ELy.A05(:299)
+E/AndroidRuntime(14657): 	at X.04gj.AVt(:531)
+E/AndroidRuntime(14657): 	at X.04dr.A01(:70)
+E/AndroidRuntime(14657): 	at X.0AXj.run(:72)
+E/AndroidRuntime(14657): 	at X.01ly.run(:25)
+E/AndroidRuntime(14657): 	at X.02me.run(:2)
+E/AndroidRuntime(14657): 	at X.01ly.run(:25)
+E/AndroidRuntime(14657): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+E/AndroidRuntime(14657): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+E/AndroidRuntime(14657): 	at X.02oT.run(:100)
+E/AndroidRuntime(14657): 	at java.lang.Thread.run(Thread.java:1572)
+E/AndroidRuntime(14657): 	at X.09AC.run(:8)
+E/AndroidRuntime(14657): Caused by: android.os.RemoteException: Remote stack trace:
+E/AndroidRuntime(14657): 	at com.android.server.am.PendingIntentController.incrementUidStatLocked(PendingIntentController.java:457)
+E/AndroidRuntime(14657): 	at com.android.server.am.PendingIntentController.getIntentSender(PendingIntentController.java:166)
+E/AndroidRuntime(14657): 	at com.android.server.am.ActivityManagerService.getIntentSenderWithFeatureAsApp(ActivityManagerService.java:5195)
+E/AndroidRuntime(14657): 	at com.android.server.am.ActivityManagerService.getIntentSenderWithFeature(ActivityManagerService.java:5116)
+E/AndroidRuntime(14657): 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3158)
+E/AndroidRuntime(14657): 
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2555µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+E/AndroidRuntime(15274): FATAL EXCEPTION: IgExecutorV2 #8
+E/AndroidRuntime(15274): Process: com.instagram.android, PID: 15274
+E/AndroidRuntime(15274): java.lang.SecurityException: Too many PendingIntent created for uid 10256, aborting Key{broadcastIntent pkg=com.instagram.android intent=act=657d7aaa92e4aH206b576daH0H25 dat=ig://notif/direct/8702490330%3Bthread_id%3A340282366841710301244260090381093605543 pkg=com.instagram.android cmp=com.instagram.android/com.instagram.notifications.push.ClearNotificationReceiver flags=0x4000000 u=0} requestCode=64278
+E/AndroidRuntime(15274): 	at android.os.Parcel.createExceptionOrNull(Parcel.java:2426)
+E/AndroidRuntime(15274): 	at android.os.Parcel.createException(Parcel.java:2410)
+E/AndroidRuntime(15274): 	at android.os.Parcel.readException(Parcel.java:2393)
+E/AndroidRuntime(15274): 	at android.os.Parcel.readException(Parcel.java:2335)
+E/AndroidRuntime(15274): 	at android.app.IActivityManager$Stub$Proxy.getIntentSenderWithFeature(IActivityManager.java:7065)
+E/AndroidRuntime(15274): 	at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(15274): 	at X.00ry.A02(:8)
+E/AndroidRuntime(15274): 	at X.00ry.invoke(:37)
+E/AndroidRuntime(15274): 	at java.lang.reflect.Proxy.invoke(Proxy.java:1009)
+E/AndroidRuntime(15274): 	at $Proxy2.getIntentSenderWithFeature(Unknown Source)
+E/AndroidRuntime(15274): 	at android.app.PendingIntent.getBroadcastAsUser(PendingIntent.java:652)
+E/AndroidRuntime(15274): 	at android.app.PendingIntent.getBroadcast(PendingIntent.java:635)
+E/AndroidRuntime(15274): 	at X.07hp.A03(:8)
+E/AndroidRuntime(15274): 	at X.0ELy.A05(:299)
+E/AndroidRuntime(15274): 	at X.04gj.AVt(:531)
+E/AndroidRuntime(15274): 	at X.04dr.A01(:70)
+E/AndroidRuntime(15274): 	at X.0AXj.run(:72)
+E/AndroidRuntime(15274): 	at X.01ly.run(:25)
+E/AndroidRuntime(15274): 	at X.02me.run(:2)
+E/AndroidRuntime(15274): 	at X.01ly.run(:25)
+E/AndroidRuntime(15274): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+E/AndroidRuntime(15274): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+E/AndroidRuntime(15274): 	at X.02oT.run(:100)
+E/AndroidRuntime(15274): 	at java.lang.Thread.run(Thread.java:1572)
+E/AndroidRuntime(15274): 	at X.09AC.run(:8)
+E/AndroidRuntime(15274): Caused by: android.os.RemoteException: Remote stack trace:
+E/AndroidRuntime(15274): 	at com.android.server.am.PendingIntentController.incrementUidStatLocked(PendingIntentController.java:457)
+E/AndroidRuntime(15274): 	at com.android.server.am.PendingIntentController.getIntentSender(PendingIntentController.java:166)
+E/AndroidRuntime(15274): 	at com.android.server.am.ActivityManagerService.getIntentSenderWithFeatureAsApp(ActivityManagerService.java:5195)
+E/AndroidRuntime(15274): 	at com.android.server.am.ActivityManagerService.getIntentSenderWithFeature(ActivityManagerService.java:5116)
+E/AndroidRuntime(15274): 	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3158)
+E/AndroidRuntime(15274): 
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1732µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2208µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2423µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2062µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 6263µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2660µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1737µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1746µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2112µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2288µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1725µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2518µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2271µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2466µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2860µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 3166µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2918µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 3203µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2289µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2410µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1885µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2211µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1907µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2533µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1871µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 3038µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2416µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 2399µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (14234): [SPM:perf] 698a51a  buildSpan: 1673µs
+I/flutter (14234): [spm] Performance monitoring completed for 698a51a
+I/flutter (14234): 01:10 +1: (tearDownAll)
+I/flutter (14234): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset/11/redmi9t/raw/20260731-005015/base/e7.jsonl
+[spm]: Reverting injection...
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:36585/_XK57oB-fXU=/
+[spm]: Detected VM service URI: ws://127.0.0.1:36585/_XK57oB-fXU=/ws
+VMServiceFlutterDriver: Isolate found with number: 1134073959827939
+VMServiceFlutterDriver: Isolate 1134073959827939 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.

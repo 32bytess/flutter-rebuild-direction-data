@@ -1,0 +1,60 @@
+// ignore_for_file: unused_import, unused_element
+import 'package:flutter/material.dart';
+import 'dependencies.dart';
+
+class GeneratedWidget extends StatefulWidget {
+  const GeneratedWidget({super.key});
+
+  @override
+  State<GeneratedWidget> createState() => _GeneratedWidgetState();
+}
+class _GeneratedWidgetState extends State<GeneratedWidget> {
+  late bool isShadow;
+  late double top;
+
+  @override
+  void initState() {
+    super.initState();
+    isShadow = fixtureIsShadow;
+    top = fixtureTop;
+  }
+
+  Widget buildTitle(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      constraints: BoxConstraints.expand(),
+      padding: EdgeInsets.only(left: 32, right: 32),
+      child: Text(
+        'Language',
+        style: TextStyle(
+          color: Color(0xff130138),
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+          letterSpacing: 3,
+          height: 1,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    List<BoxShadow>? boxShadow;
+    if (isShadow) {
+      boxShadow = [
+        BoxShadow(
+          color: Color(0x0c000000),
+          offset: Offset(0, 1.2),
+          spreadRadius: 0,
+          blurRadius: 10,
+        ),
+      ];
+    }
+    return Container(
+      constraints: BoxConstraints.expand(),
+      decoration: BoxDecoration(color: Colors.white, boxShadow: boxShadow),
+      padding: EdgeInsets.only(top: top),
+      child: buildTitle(context),
+    );
+  }
+}

@@ -1,0 +1,899 @@
+# sample_id=1927/rev_002_a0304d99 exec_index=6 ok=False perf_lines=30 vm_events=30 battery_pct=77 soc_temp_millic=41400 battery_temp_c=33.2 charging=False preflight_started=2026-09-12T12:58:02.887282+00:00 started=2026-09-12T12:58:05.557772+00:00 ts=2026-09-12T13:00:06.624903+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:76:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:93:9 • use_super_parameters
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           20.3s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,075ms
+D/MiuiMultiWindowUtils(20656): freeform resolution args raw data:{  "zizhan":{    "freeform_args": {      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.168,"left_margin":0.484},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.1222,"left_margin":0.59745},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.2596,"left_margin":0.2624},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.213,"left_margin":0.3758}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.74,"top_margin":0.0753,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.5756,"top_margin":-1,"left_margin":0.0753},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":0.0753,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":-1,"left_margin":0.0753}}    },    "mini_freeform_args":{      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.165},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.165}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.293},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.293}}    }  },  "wide_default":{    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":0.125,"left_margin":0.392},        "horizontal_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":-1,"left_margin":0.6415},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":0.125,"left_margin":0.206},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":-1,"left_margin":0.456}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "vertical_landscape":{"aspect_ratio":-1, "original_ratio":0.144},        "horizontal_landscape":{"aspect_ratio":-1, "original_ratio":0.144}    }  },  "narrow_default": {    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":1,"original_scale":0.7182,"top_margin":0.142,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.8, "original_ratio":1,"original_scale":0.7182,"top_margin":-1,"left_margin":0.05},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":0.142,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":-1,"left_margin":0.05}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "vertical_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3},        "horizontal_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3}    }  },  "regular_default": {    "freeform_args": {      "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":1,"original_scale":0.7,"top_margin":0.109,"left_margin":-1},      "horizontal_portrait":{"aspect_ratio":0.6667, "original_ratio":1,"original_scale":0.6102,"top_margin":-1,"left_margin":0.026},      "vertical_landscape":{"asp
+E/MiuiMultiWindowUtils(20656): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(20656): true
+D/MULTI_WINDOW_SWITCH_ENABLED(20656): false
+D/IS_CTS_MODE(20656): true
+D/MULTI_WINDOW_SWITCH_ENABLED(20656): false
+D/IS_CTS_MODE(20656): true
+D/MULTI_WINDOW_SWITCH_ENABLED(20656): false
+D/DecorView[](20656): getWindowModeFromSystem  windowmode is 1
+I/ForceDarkHelperStubImpl(20656): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+I/ForceDarkHelperStubImpl(20656): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+D/DecorView[](20656): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](20656): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (20656): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=350ms latency=374ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=1 wall=350ms seq=4 late=374ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=371ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (20656): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=726ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=1 wall=350ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=371ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=350ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(20656): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(20656): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (20656): PerfMonitor longMsg : seq=8 plan=15:58:42.993 late=354ms wall=1667ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (20656): PerfMonitor doFrame : time=1667ms vsyncFrame=0 latency=354ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1667ms seq=8 late=354ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(20656): Skipped 94 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(20656): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0xca20cbb, mIsProjectionMode = false
+W/Looper  (20656): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1576ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (20656): 00:00 +0: Performance Benchmark
+E/hmark_containe(20656): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(20656): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(20656): setSchedFifo pid:20656, mode:3
+D/DecorView[](20656): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](20656): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](20656): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(20656): Installing profile for com.example.benchmark_container
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #7      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (20656): #8      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #9      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #10     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #11     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #12     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #13     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #14     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #15     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #16     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #17     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #18     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #19     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #20     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #21     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #22     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #23     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #24     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #25     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #26     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #27     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #28     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #29     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #30     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #31     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #32     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #33     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #34     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7264)
+I/flutter (20656): #35     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7279)
+I/flutter (20656): #36     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #37     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #38     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #39     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #40     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #41     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #42     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #43     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #44     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #45     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #46     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #47     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #48     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (20656): #49     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #50     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #51     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #52     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #53     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #54     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #55     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #56     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #57     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #58     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #59     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #60     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #61     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #62     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #63     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #64     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #65     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #66     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #67     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #68     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (20656): #69     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #70     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #71     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #72     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (20656): #73     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #74     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #75     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #76     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #77     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #78     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #79     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #80     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #81     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (20656): #82     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #83     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #84     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #85     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #86     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #87     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #88     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (20656): #89     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #90     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #91     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): #92     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (20656): #93     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #94     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #95     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (20656): #96     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (20656): #97     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (20656): #98     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (20656): #99     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 17270µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3659µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3646µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3028µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3525µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3533µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3824µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3573µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3549µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3294µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3048µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3651µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3510µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3512µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3124µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3459µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3603µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3687µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3665µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3000µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3861µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3678µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3471µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3629µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3728µs
+[spm]: ProfilerData event received.
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3094µs
+[spm]: ProfilerData event received.
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3473µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3652µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3307µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): type '(dynamic) => dynamic' is not a subtype of type '(String) => bool' of 'test'
+I/flutter (20656): #0      _GeneratedWidgetState._getSegments (package:benchmark_container/generated_widget.dart:37)
+I/flutter (20656): #1      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:42)
+I/flutter (20656): #2      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (20656): #3      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (20656): #4      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (20656): #5      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (20656): #6      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (20656): #7      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (20656): #8      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (20656): #9      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (20656): #10     RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (20656): #11     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (20656): #12     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (20656): #13     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (20656): #14     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (20656): #18     _invoke (dart:ui/hooks.dart:425)
+I/flutter (20656): #19     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (20656): #20     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (20656): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (20656): [SPM:perf] 698a51a  buildSpan: 3787µs
+I/flutter (20656): [spm] Performance monitoring completed for 698a51a
+I/flutter (20656): Multiple exceptions (31) were detected during the running of the current test, and at least one was unexpected.
+I/flutter (20656): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter (20656): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter (20656): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter (20656): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter (20656): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter (20656): <asynchronous suspension>
+I/flutter (20656): (elided 6 frames from dart:async)
+I/flutter (20656): 01:10 +0: Performance Benchmark [E]
+I/flutter (20656):   Test failed. See exception logs above.
+I/flutter (20656):   The test description was: Performance Benchmark
+I/flutter (20656):   
+I/flutter (20656): 01:10 +0 -1: (tearDownAll)
+I/flutter (20656): 01:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/1927/redmi9t/raw/20260912-155457/rev_002_a0304d99/e6.jsonl
+[spm]: Reverting injection...
+4 issues found. (ran in 0.5s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:37543/pPLA8Htu6KA=/
+[spm]: Detected VM service URI: ws://127.0.0.1:37543/pPLA8Htu6KA=/ws
+VMServiceFlutterDriver: Isolate found with number: 5297829582756183
+VMServiceFlutterDriver: Isolate 5297829582756183 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

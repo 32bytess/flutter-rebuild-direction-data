@@ -1,0 +1,188 @@
+{
+  "generated": "2026-08-12T18:09:35.468140+00:00",
+  "policy": "Per-role latest-occurrence-wins: walk sessions newest->oldest, the latest session a role appears in decides it. A role is excluded iff its latest sighting has >=1 ok=False execution; failed-then-rerun roles are kept. A group is fully excluded if its base is excluded.",
+  "n_expected_executions": 15,
+  "excluded_groups": [
+    "36"
+  ],
+  "excluded_roles": [
+    {
+      "group": "08",
+      "role": "mutation_1",
+      "final_session": "20260730-045703",
+      "n_present": 15,
+      "n_expected": 15,
+      "failed_execs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "perf_lines": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "still_in_dataset": true
+    },
+    {
+      "group": "26",
+      "role": "mutation_5",
+      "final_session": "20260804-043817",
+      "n_present": 15,
+      "n_expected": 15,
+      "failed_execs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "perf_lines": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "still_in_dataset": true
+    },
+    {
+      "group": "36",
+      "role": "base",
+      "final_session": "20260812-185012",
+      "n_present": 5,
+      "n_expected": 15,
+      "failed_execs": [
+        7
+      ],
+      "perf_lines": [
+        9
+      ],
+      "still_in_dataset": true
+    },
+    {
+      "group": "36",
+      "role": "mutation_1",
+      "final_session": "20260812-185012",
+      "n_present": 5,
+      "n_expected": 15,
+      "failed_execs": [
+        3
+      ],
+      "perf_lines": [
+        0
+      ],
+      "still_in_dataset": true
+    },
+    {
+      "group": "36",
+      "role": "mutation_7",
+      "final_session": "20260812-185012",
+      "n_present": 11,
+      "n_expected": 15,
+      "failed_execs": [
+        3
+      ],
+      "perf_lines": [
+        13
+      ],
+      "still_in_dataset": true
+    }
+  ],
+  "incomplete_roles": [
+    {
+      "group": "36",
+      "role": "mutation_2",
+      "final_session": "20260812-185012",
+      "n_present": 10,
+      "n_expected": 15
+    },
+    {
+      "group": "36",
+      "role": "mutation_3",
+      "final_session": "20260812-185012",
+      "n_present": 7,
+      "n_expected": 15
+    },
+    {
+      "group": "36",
+      "role": "mutation_4",
+      "final_session": "20260812-185012",
+      "n_present": 8,
+      "n_expected": 15
+    },
+    {
+      "group": "36",
+      "role": "mutation_5",
+      "final_session": "20260812-185012",
+      "n_present": 4,
+      "n_expected": 15
+    },
+    {
+      "group": "36",
+      "role": "mutation_6",
+      "final_session": "20260812-185012",
+      "n_present": 8,
+      "n_expected": 15
+    },
+    {
+      "group": "36",
+      "role": "mutation_8",
+      "final_session": "20260812-185012",
+      "n_present": 4,
+      "n_expected": 15
+    }
+  ],
+  "recovered_roles": [],
+  "counts": {
+    "ok": 289,
+    "excluded": 5,
+    "incomplete": 6,
+    "recovered": 0,
+    "excluded_groups": 1
+  }
+}

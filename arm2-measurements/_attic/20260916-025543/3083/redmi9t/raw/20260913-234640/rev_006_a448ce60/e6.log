@@ -1,0 +1,868 @@
+# sample_id=3083/rev_006_a448ce60 exec_index=6 ok=False perf_lines=30 vm_events=30 battery_pct=83 soc_temp_millic=42600 battery_temp_c=30.8 charging=False preflight_started=2026-09-15T01:26:31.663309+00:00 started=2026-09-15T01:26:34.017359+00:00 ts=2026-09-15T01:29:03.920916+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Unnecessary 'late' modifier. Try removing the 'late' • lib/dependencies.dart:54:1 • unnecessary_late
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Constructors for public widgets should have a named 'key' parameter. Try adding a named parameter to the constructor • lib/generated_widget.dart:9:9 • use_key_in_widget_constructors
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/generated_widget.dart:11:3 • prefer_const_constructors_in_immutables
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           19.8s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...        26.5s
+D/MiuiMultiWindowUtils( 3443): freeform resolution args raw data:{  "zizhan":{    "freeform_args": {      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.168,"left_margin":0.484},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.1222,"left_margin":0.59745},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.2596,"left_margin":0.2624},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.213,"left_margin":0.3758}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.74,"top_margin":0.0753,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.5756,"top_margin":-1,"left_margin":0.0753},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":0.0753,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":-1,"left_margin":0.0753}}    },    "mini_freeform_args":{      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.165},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.165}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.293},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.293}}    }  },  "wide_default":{    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":0.125,"left_margin":0.392},        "horizontal_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":-1,"left_margin":0.6415},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":0.125,"left_margin":0.206},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":-1,"left_margin":0.456}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "vertical_landscape":{"aspect_ratio":-1, "original_ratio":0.144},        "horizontal_landscape":{"aspect_ratio":-1, "original_ratio":0.144}    }  },  "narrow_default": {    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":1,"original_scale":0.7182,"top_margin":0.142,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.8, "original_ratio":1,"original_scale":0.7182,"top_margin":-1,"left_margin":0.05},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":0.142,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":-1,"left_margin":0.05}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "vertical_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3},        "horizontal_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3}    }  },  "regular_default": {    "freeform_args": {      "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":1,"original_scale":0.7,"top_margin":0.109,"left_margin":-1},      "horizontal_portrait":{"aspect_ratio":0.6667, "original_ratio":1,"original_scale":0.6102,"top_margin":-1,"left_margin":0.026},      "vertical_landscape":{"asp
+E/MiuiMultiWindowUtils( 3443): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE( 3443): true
+D/MULTI_WINDOW_SWITCH_ENABLED( 3443): false
+D/IS_CTS_MODE( 3443): true
+D/MULTI_WINDOW_SWITCH_ENABLED( 3443): false
+D/IS_CTS_MODE( 3443): true
+D/MULTI_WINDOW_SWITCH_ENABLED( 3443): false
+D/DecorView[]( 3443): getWindowModeFromSystem  windowmode is 1
+D/DecorView[]( 3443): getWindowModeFromSystem  windowmode is 1
+D/DecorView[]( 3443): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  ( 3443): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=415ms latency=411ms running=0ms  procState=-1  historyMsgCount=2 (msgIndex=1 wall=415ms seq=4 late=411ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=422ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  ( 3443): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=1ms latency=814ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=2 wall=415ms seq=4 late=411ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=422ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=415ms seq=4 late=411ms h=android.app.ActivityThread$H w=159)
+D/SurfaceView( 3443): UPDATE null, mIsCastMode = false
+D/hw-ProcessState( 3443): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  ( 3443): PerfMonitor longMsg : seq=8 plan=04:27:35.462 late=444ms wall=1773ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  ( 3443): PerfMonitor doFrame : time=1773ms vsyncFrame=0 latency=444ms procState=-1 historyMsgCount=7 (msgIndex=2 wall=415ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=1773ms seq=8 late=444ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=4 wall=415ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer( 3443): Skipped 99 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView( 3443): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x9ac515, mIsProjectionMode = false
+W/Looper  ( 3443): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1657ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter ( 3443): 00:00 +0: Performance Benchmark
+E/hmark_containe( 3443): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe( 3443): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl( 3443): setSchedFifo pid:3443, mode:3
+D/DecorView[]( 3443): onWindowFocusChanged hasWindowFocus true
+D/DecorView[]( 3443): getWindowModeFromSystem  windowmode is 1
+D/DecorView[]( 3443): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller( 3443): Installing profile for com.example.benchmark_container
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #6      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter ( 3443): #7      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #8      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #9      Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #10     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #11     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #12     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #13     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #14     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #15     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #16     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #17     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #18     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #19     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #20     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #21     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #22     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #23     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #24     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #25     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #26     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #27     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #28     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #29     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #30     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #31     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #32     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #33     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7264)
+I/flutter ( 3443): #34     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7279)
+I/flutter ( 3443): #35     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #36     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #37     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #38     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #39     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #40     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #41     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #42     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #43     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #44     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #45     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #46     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #47     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter ( 3443): #48     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #49     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #50     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #51     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #52     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #53     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #54     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #55     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #56     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #57     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #58     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #59     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #60     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #61     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #62     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #63     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #64     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #65     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #66     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #67     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter ( 3443): #68     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #69     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #70     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #71     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter ( 3443): #72     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #73     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #74     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #75     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #76     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #77     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #78     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #79     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #80     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter ( 3443): #81     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #82     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #83     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #84     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #85     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #86     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #87     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter ( 3443): #88     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #89     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #90     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #91     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): #92     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #93     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #94     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter ( 3443): #95     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter ( 3443): #96     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter ( 3443): #97     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter ( 3443): #98     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter ( 3443): #99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 14202µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2304µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2462µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2230µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2294µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2324µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2428µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2262µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2267µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2373µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2308µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2284µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2309µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2384µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2312µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2432µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2349µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2481µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2252µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2532µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2387µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2275µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2350µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2355µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2325µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2406µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2622µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2272µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2334µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Null check operator used on a null value
+I/flutter ( 3443): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:45)
+I/flutter ( 3443): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter ( 3443): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter ( 3443): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter ( 3443): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter ( 3443): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter ( 3443): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter ( 3443): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter ( 3443): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter ( 3443): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter ( 3443): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter ( 3443): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter ( 3443): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter ( 3443): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter ( 3443): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter ( 3443): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter ( 3443): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter ( 3443): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter ( 3443): [SPM:perf] 698a51a  buildSpan: 2481µs
+I/flutter ( 3443): [spm] Performance monitoring completed for 698a51a
+I/flutter ( 3443): Multiple exceptions (31) were detected during the running of the current test, and at least one was unexpected.
+I/flutter ( 3443): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter ( 3443): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter ( 3443): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter ( 3443): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter ( 3443): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter ( 3443): <asynchronous suspension>
+I/flutter ( 3443): (elided 6 frames from dart:async)
+I/flutter ( 3443): 01:10 +0: Performance Benchmark [E]
+I/flutter ( 3443):   Test failed. See exception logs above.
+I/flutter ( 3443):   The test description was: Performance Benchmark
+I/flutter ( 3443):   
+I/flutter ( 3443): 01:10 +0 -1: (tearDownAll)
+I/flutter ( 3443): 01:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/3083/redmi9t/raw/20260913-234640/rev_006_a448ce60/e6.jsonl
+[spm]: Reverting injection...
+5 issues found. (ran in 1.0s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:37837/TpZS0j10-GA=/
+[spm]: Detected VM service URI: ws://127.0.0.1:37837/TpZS0j10-GA=/ws
+VMServiceFlutterDriver: Isolate found with number: 2570674967109643
+VMServiceFlutterDriver: Isolate 2570674967109643 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

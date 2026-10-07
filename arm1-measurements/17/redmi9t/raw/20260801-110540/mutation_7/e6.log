@@ -1,0 +1,184 @@
+# sample_id=17/mutation_7 exec_index=6 ok=True perf_lines=30 vm_events=30 battery_pct=77 soc_temp_millic=40500 battery_temp_c=30.5 charging=False preflight_started=2026-08-01T09:01:32.125207+00:00 started=2026-08-01T09:01:34.497186+00:00 ts=2026-08-01T09:03:31.036724+00:00
+[spm]: Running flutter analyze...
+Analyzing lib...                                                
+
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:23:9 • library_private_types_in_public_api
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:26:9 • library_private_types_in_public_api
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:27:9 • library_private_types_in_public_api
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           20.3s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (61.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      2,019ms
+I/hmark_containe(13887): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityNodeInfo;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported,test-api) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/hmark_containe(13887): hiddenapi: Accessing hidden method Landroid/view/accessibility/AccessibilityRecord;->getSourceNodeId()J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/hmark_containe(13887): hiddenapi: Accessing hidden field Landroid/view/accessibility/AccessibilityNodeInfo;->mChildNodeIds:Landroid/util/LongArray; (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+I/hmark_containe(13887): hiddenapi: Accessing hidden method Landroid/util/LongArray;->get(I)J (runtime_flags=0, domain=platform, api=unsupported) from Lio/flutter/view/AccessibilityViewEmbedder$ReflectionAccessors; (domain=app, TargetSdkVersion=36) using reflection: allowed
+D/MiuiMultiWindowUtils(13887): freeform resolution args raw data:{  "zizhan":{    "freeform_args": {      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.168,"left_margin":0.484},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.1222,"left_margin":0.59745},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.2596,"left_margin":0.2624},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.213,"left_margin":0.3758}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.74,"top_margin":0.0753,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.5756,"top_margin":-1,"left_margin":0.0753},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":0.0753,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":-1,"left_margin":0.0753}}    },    "mini_freeform_args":{      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.165},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.165}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.293},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.293}}    }  },  "wide_default":{    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":0.125,"left_margin":0.392},        "horizontal_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":-1,"left_margin":0.6415},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":0.125,"left_margin":0.206},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":-1,"left_margin":0.456}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "vertical_landscape":{"aspect_ratio":-1, "original_ratio":0.144},        "horizontal_landscape":{"aspect_ratio":-1, "original_ratio":0.144}    }  },  "narrow_default": {    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":1,"original_scale":0.7182,"top_margin":0.142,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.8, "original_ratio":1,"original_scale":0.7182,"top_margin":-1,"left_margin":0.05},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":0.142,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":-1,"left_margin":0.05}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "vertical_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3},        "horizontal_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3}    }  },  "regular_default": {    "freeform_args": {      "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":1,"original_scale":0.7,"top_margin":0.109,"left_margin":-1},      "horizontal_portrait":{"aspect_ratio":0.6667, "original_ratio":1,"original_scale":0.6102,"top_margin":-1,"left_margin":0.026},      "vertical_landscape":{"asp
+E/MiuiMultiWindowUtils(13887): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(13887): true
+D/MULTI_WINDOW_SWITCH_ENABLED(13887): false
+D/IS_CTS_MODE(13887): true
+D/MULTI_WINDOW_SWITCH_ENABLED(13887): false
+D/IS_CTS_MODE(13887): true
+D/MULTI_WINDOW_SWITCH_ENABLED(13887): false
+D/DecorView[](13887): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](13887): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](13887): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (13887): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=358ms latency=364ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=1 wall=358ms seq=4 late=364ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=358ms seq=4 late=364ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=371ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (13887): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=723ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=1 wall=358ms seq=4 late=364ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=358ms seq=4 late=364ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=371ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=358ms seq=4 late=364ms h=android.app.ActivityThread$H w=159)
+D/SurfaceView(13887): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(13887): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (13887): PerfMonitor longMsg : seq=8 plan=12:02:09.331 late=370ms wall=1682ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (13887): PerfMonitor doFrame : time=1682ms vsyncFrame=0 latency=370ms procState=-1 historyMsgCount=7 (msgIndex=1 wall=358ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=358ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=1682ms seq=8 late=370ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=4 wall=358ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer(13887): Skipped 95 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(13887): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x4d86cce, mIsProjectionMode = false
+W/Looper  (13887): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1593ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (13887): 00:00 +0: Performance Benchmark
+E/hmark_containe(13887): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(13887): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(13887): setSchedFifo pid:13887, mode:3
+D/DecorView[](13887): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](13887): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](13887): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(13887): Installing profile for com.example.benchmark_container
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 7601µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2317µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2288µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2599µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2498µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2676µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2270µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2359µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2413µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2289µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2266µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2321µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2271µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2314µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2212µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2395µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2255µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2290µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2465µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2308µs
+[spm]: ProfilerData event received.
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2519µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2534µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2354µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2312µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2262µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2326µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2293µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2232µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2252µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (13887): [SPM:perf] 698a51a  buildSpan: 2457µs
+I/flutter (13887): [spm] Performance monitoring completed for 698a51a
+I/flutter (13887): 01:10 +1: (tearDownAll)
+I/flutter (13887): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset/17/redmi9t/raw/20260801-110540/mutation_7/e6.jsonl
+[spm]: Reverting injection...
+3 issues found. (ran in 0.5s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:42645/8TYiLFzfzSw=/
+[spm]: Detected VM service URI: ws://127.0.0.1:42645/8TYiLFzfzSw=/ws
+VMServiceFlutterDriver: Isolate found with number: 3340969933462727
+VMServiceFlutterDriver: Isolate 3340969933462727 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.

@@ -1,0 +1,423 @@
+// ignore_for_file: unused_import, unused_element
+import 'package:flutter/material.dart';
+import 'dependencies.dart';
+
+class GeneratedWidget extends StatefulWidget {
+  const GeneratedWidget({super.key});
+
+  @override
+  State<GeneratedWidget> createState() => _GeneratedWidgetState();
+}
+class _GeneratedWidgetState extends State<GeneratedWidget> {
+  late ValueNotifier<int> _minutes, _seconds;
+
+  @override
+  void initState() {
+    super.initState();
+    settings = settingsValue;
+    _minutes = makeMinutes();
+    _seconds = makeSeconds();
+  }
+
+  @override
+  void dispose() {
+    _minutes.dispose();
+    _seconds.dispose();
+    super.dispose();
+  }
+
+  void _submit(BuildContext context) => Navigator.maybeOf(
+    context,
+  )?.pop(_minutes.value * secondsInMinute + _seconds.value);
+
+  @override
+  Widget build(BuildContext context) {
+    return MediaQueryDataProvider(
+      child: Builder(
+        builder: (context) {
+          final l10n = context.l10n;
+          final timeComponentFormatter = NumberFormat('0', context.locale);
+
+          const textStyle = TextStyle(fontSize: 34);
+          const digitsAlign = TextAlign.right;
+
+          return AvesDialog(
+            scrollableContent: [
+              _DurationTable(
+                minutesNotifier: _minutes,
+                secondsNotifier: _seconds,
+                minutesLabel: l10n.durationDialogMinutes,
+                secondsLabel: l10n.durationDialogSeconds,
+                textStyle: textStyle,
+                digitsAlign: digitsAlign,
+                format: timeComponentFormatter.format,
+              ),
+            ],
+            actions: [
+              const CancelButton(),
+              _ApplyButton(
+                minutesNotifier: _minutes,
+                secondsNotifier: _seconds,
+                label: l10n.applyButtonLabel,
+                onPressed: () => _submit(context),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+class _DurationTable extends StatelessWidget {
+  final ValueNotifier<int> minutesNotifier;
+  final ValueNotifier<int> secondsNotifier;
+  final String minutesLabel;
+  final String secondsLabel;
+  final TextStyle textStyle;
+  final TextAlign digitsAlign;
+  final String Function(int v) format;
+
+  const _DurationTable({
+    required this.minutesNotifier,
+    required this.secondsNotifier,
+    required this.minutesLabel,
+    required this.secondsLabel,
+    required this.textStyle,
+    required this.digitsAlign,
+    required this.format,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Center(
+        child: Table(
+          textDirection: timeComponentsDirection,
+          children: [
+            TableRow(
+              children: [
+                Center(child: Text(minutesLabel)),
+                const SizedBox(width: 16),
+                Center(child: Text(secondsLabel)),
+              ],
+            ),
+            TableRow(
+              children: [
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: WheelSelector(
+                    valueNotifier: minutesNotifier,
+                    values: List.generate(minutesInHour, (i) => i),
+                    textStyle: textStyle,
+                    textAlign: digitsAlign,
+                    format: format,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 2),
+                  child: Text(':', style: textStyle),
+                ),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: WheelSelector(
+                    valueNotifier: secondsNotifier,
+                    values: List.generate(secondsInMinute, (i) => i),
+                    textStyle: textStyle,
+                    textAlign: digitsAlign,
+                    format: format,
+                  ),
+                ),
+              ],
+            ),
+          ],
+          defaultColumnWidth: const IntrinsicColumnWidth(),
+          defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+        ),
+      ),
+    );
+  }
+}
+class _ApplyButton extends StatelessWidget {
+  final ValueNotifier<int> minutesNotifier;
+  final ValueNotifier<int> secondsNotifier;
+  final String label;
+  final VoidCallback onPressed;
+
+  const _ApplyButton({
+    required this.minutesNotifier,
+    required this.secondsNotifier,
+    required this.label,
+    required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: Listenable.merge([minutesNotifier, secondsNotifier]),
+      builder: (context, child) {
+        final isValid = minutesNotifier.value > 0 || secondsNotifier.value > 0;
+        return TextButton(
+          onPressed: isValid ? onPressed : null,
+          child: child!,
+        );
+      },
+      child: Text(label),
+    );
+  }
+}
+class MediaQueryDataProvider extends StatelessWidget {
+  final Widget child;
+
+  const MediaQueryDataProvider({super.key, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return child;
+  }
+}
+class AvesDialog extends StatefulWidget {
+  static const confirmationRouteName = '/dialog/confirmation';
+  static const warningRouteName = '/dialog/warning';
+
+  final String? title;
+  final ScrollController? scrollController;
+  final List<Widget>? scrollableContent;
+  final double horizontalContentPadding;
+  final Widget? content;
+  final List<Widget> actions;
+
+  static const Radius cornerRadius = Radius.circular(24);
+  static const double defaultHorizontalContentPadding = 24;
+  static const double controlCaptionPadding = 16;
+  static const double borderWidth = 1.0;
+  static const EdgeInsets actionsPadding = EdgeInsets.symmetric(
+    vertical: 4,
+    horizontal: 16,
+  );
+  static const EdgeInsets buttonPadding = EdgeInsets.symmetric(horizontal: 8);
+
+  const AvesDialog({
+    super.key,
+    this.title,
+    this.scrollController,
+    this.scrollableContent,
+    this.horizontalContentPadding = defaultHorizontalContentPadding,
+    this.content,
+    this.actions = const [],
+  }) : assert((scrollableContent != null) ^ (content != null));
+
+  @override
+  State<AvesDialog> createState() => _AvesDialogState();
+
+  static Decoration contentDecoration(BuildContext context) => BoxDecoration(
+    border: Border(
+      bottom: Divider.createBorderSide(context, width: borderWidth),
+    ),
+  );
+
+  static ShapeBorder shape(BuildContext context) {
+    return RoundedRectangleBorder(
+      side: Divider.createBorderSide(context, width: borderWidth),
+      borderRadius: const BorderRadius.all(cornerRadius),
+    );
+  }
+}
+class _AvesDialogState extends State<AvesDialog> {
+  final ScrollController _internalScrollController = ScrollController();
+
+  ScrollController get scrollController =>
+      widget.scrollController ?? _internalScrollController;
+
+  @override
+  void dispose() {
+    _internalScrollController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final title = widget.title;
+    return AlertDialog(
+      title: title != null
+          ? Padding(
+              // padding to avoid transparent border overlapping
+              padding: const EdgeInsets.symmetric(
+                horizontal: AvesDialog.borderWidth,
+              ),
+              child: DialogTitle(title: title),
+            )
+          : null,
+      titlePadding: EdgeInsets.zero,
+      // the `scrollable` flag of `AlertDialog` makes it
+      // scroll both the title and the content together,
+      // and overflow feedback ignores the dialog shape,
+      // so we restrict scrolling to the content instead
+      content: _buildContent(context),
+      contentPadding: widget.scrollableContent != null
+          ? EdgeInsets.zero
+          : EdgeInsets.only(
+              left: widget.horizontalContentPadding,
+              top: 20,
+              right: widget.horizontalContentPadding,
+            ),
+      actions: widget.actions,
+      actionsPadding: AvesDialog.actionsPadding,
+      buttonPadding: AvesDialog.buttonPadding,
+      // clipping to prevent highlighted material to bleed through rounded corners
+      clipBehavior: Clip.antiAlias,
+      shape: AvesDialog.shape(context),
+    );
+  }
+
+  Widget _buildContent(BuildContext context) {
+    final content = widget.content;
+    if (content != null) {
+      return content;
+    }
+
+    final scrollableContent = widget.scrollableContent;
+    if (scrollableContent != null) {
+      Widget child = ListView(
+        controller: scrollController,
+        shrinkWrap: true,
+        children: scrollableContent,
+      );
+
+      if (!settings.useTvLayout) {
+        child = Theme(
+          data: Theme.of(context).copyWith(
+            scrollbarTheme: ScrollbarThemeData(
+              thumbVisibility: WidgetStateProperty.all(true),
+              radius: const Radius.circular(16),
+              crossAxisMargin: 4,
+              // adapt margin when corner is around content itself, not outside for the title
+              mainAxisMargin:
+                  4 +
+                  (widget.title != null ? 0 : AvesDialog.cornerRadius.y / 2),
+              interactive: true,
+            ),
+          ),
+          child: Scrollbar(
+            controller: scrollController,
+            notificationPredicate: (notification) {
+              // as of Flutter v3.0.1, the `Scrollbar` does not only respond to the nearest `ScrollView`
+              // despite the `defaultScrollNotificationPredicate` checking notification depth,
+              // as the notifications coming from the controller in `ListWheelScrollView` in `WheelSelector` still have a depth of 0.
+              // Cancelling notification bubbling seems ineffective, so we check the metrics type as a workaround.
+              return defaultScrollNotificationPredicate(notification) &&
+                  notification.metrics is! FixedExtentMetrics;
+            },
+            child: child,
+          ),
+        );
+      }
+
+      return Container(
+        // padding to avoid transparent border overlapping
+        padding: const EdgeInsets.symmetric(horizontal: AvesDialog.borderWidth),
+        // workaround because the dialog tries
+        // to size itself to the content intrinsic size,
+        // but the `ListView` viewport does not have one
+        width: MediaQuery.sizeOf(context).width / 2,
+        child: DecoratedBox(
+          decoration: AvesDialog.contentDecoration(context),
+          child: child,
+        ),
+      );
+    }
+
+    return const SizedBox();
+  }
+}
+class DialogTitle extends StatelessWidget {
+  final String title;
+
+  const DialogTitle({super.key, required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 16),
+      decoration: AvesDialog.contentDecoration(context),
+      child: Text(title, textAlign: TextAlign.center),
+    );
+  }
+}
+class WheelSelector<T> extends StatefulWidget {
+  final ValueNotifier<T> valueNotifier;
+  final List<T> values;
+  final TextStyle textStyle;
+  final TextAlign textAlign;
+  final String Function(T v) format;
+
+  const WheelSelector({
+    super.key,
+    required this.valueNotifier,
+    required this.values,
+    required this.textStyle,
+    required this.textAlign,
+    required this.format,
+  });
+
+  @override
+  State<WheelSelector<T>> createState() => _WheelSelectorState<T>();
+}
+class _WheelSelectorState<T> extends State<WheelSelector<T>> {
+  late FixedExtentScrollController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    final initialIndex = widget.values.indexOf(widget.valueNotifier.value);
+    _controller = FixedExtentScrollController(
+      initialItem: initialIndex >= 0 ? initialIndex : 0,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 80,
+      height: 120,
+      child: ListWheelScrollView(
+        controller: _controller,
+        itemExtent: 40,
+        onSelectedItemChanged: (index) {
+          widget.valueNotifier.value = widget.values[index];
+        },
+        children: widget.values
+            .map(
+              (v) => Text(
+                widget.format(v),
+                style: widget.textStyle,
+                textAlign: widget.textAlign,
+              ),
+            )
+            .toList(),
+      ),
+    );
+  }
+}
+class CancelButton<T> extends StatelessWidget {
+  final String? text;
+  final T? result;
+
+  const CancelButton({super.key, this.text, this.result});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () => Navigator.maybeOf(context)?.pop(result),
+      // MD2 button labels were upper case but they are lower case in MD3
+      child: Text(text ?? Themes.asButtonLabel(context.l10n.cancelTooltip)),
+    );
+  }
+}

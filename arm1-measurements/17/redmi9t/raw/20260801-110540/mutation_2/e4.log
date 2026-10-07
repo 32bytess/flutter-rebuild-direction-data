@@ -1,0 +1,179 @@
+# sample_id=17/mutation_2 exec_index=4 ok=True perf_lines=30 vm_events=30 battery_pct=73 soc_temp_millic=42000 battery_temp_c=30.9 charging=False preflight_started=2026-08-01T09:46:50.276856+00:00 started=2026-08-01T09:46:52.661453+00:00 ts=2026-08-01T09:48:50.125545+00:00
+[spm]: Running flutter analyze...
+Analyzing lib...                                                
+
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:23:9 • library_private_types_in_public_api
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:26:9 • library_private_types_in_public_api
+   info • Invalid use of a private type in a public API. Try making the private type public, or making the API that uses the private type also be private • lib/dependencies.dart:27:9 • library_private_types_in_public_api
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           20.6s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (61.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      2,008ms
+E/MiuiMultiWindowUtils(23557): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(23557): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23557): false
+D/IS_CTS_MODE(23557): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23557): false
+D/IS_CTS_MODE(23557): true
+D/MULTI_WINDOW_SWITCH_ENABLED(23557): false
+D/DecorView[](23557): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23557): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23557): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (23557): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=444ms latency=434ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=3 wall=421ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (23557): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=880ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=3 wall=421ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=444ms seq=4 late=434ms h=android.app.ActivityThread$H w=159)
+D/SurfaceView(23557): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(23557): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (23557): PerfMonitor longMsg : seq=8 plan=12:47:28.058 late=471ms wall=1788ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (23557): PerfMonitor doFrame : time=1788ms vsyncFrame=0 latency=471ms procState=-1 historyMsgCount=7 (msgIndex=3 wall=1788ms seq=8 late=471ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=4 wall=444ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer(23557): Skipped 99 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(23557): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x4d86cce, mIsProjectionMode = false
+W/Looper  (23557): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1666ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (23557): 00:00 +0: Performance Benchmark
+E/hmark_containe(23557): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(23557): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(23557): setSchedFifo pid:23557, mode:3
+D/DecorView[](23557): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](23557): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23557): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(23557): Installing profile for com.example.benchmark_container
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2265µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 7079µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 3354µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2248µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 3024µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2233µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2165µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2135µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2502µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2117µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2485µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2233µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2241µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2625µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2136µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2532µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2850µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2136µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2163µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2239µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2712µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2176µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2140µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2314µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2263µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2374µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2751µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2282µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2124µs
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): setState 698a51a
+I/flutter (23557): [SPM:perf] 698a51a  buildSpan: 2497µs
+[spm]: ProfilerData event received.
+I/flutter (23557): [spm] Performance monitoring completed for 698a51a
+I/flutter (23557): 01:10 +1: (tearDownAll)
+I/flutter (23557): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset/17/redmi9t/raw/20260801-110540/mutation_2/e4.jsonl
+[spm]: Reverting injection...
+3 issues found. (ran in 0.5s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:37627/xogc60wxnG4=/
+[spm]: Detected VM service URI: ws://127.0.0.1:37627/xogc60wxnG4=/ws
+VMServiceFlutterDriver: Isolate found with number: 1288299123901355
+VMServiceFlutterDriver: Isolate 1288299123901355 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.

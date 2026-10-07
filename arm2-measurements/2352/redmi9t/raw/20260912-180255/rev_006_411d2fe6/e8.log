@@ -1,0 +1,237 @@
+# sample_id=2352/rev_006_411d2fe6 exec_index=8 ok=True perf_lines=30 vm_events=30 battery_pct=62 soc_temp_millic=41400 battery_temp_c=32.1 charging=False preflight_started=2026-09-12T18:18:44.905544+00:00 started=2026-09-12T18:18:47.595003+00:00 ts=2026-09-12T18:20:54.175781+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:75:9 • use_super_parameters
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:283:9 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:303:9 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:316:7 • curly_braces_in_flow_control_structures
+warning • This default clause is covered by the previous cases. Try removing the default clause, or restructuring the preceding patterns • lib/generated_widget.dart:357:7 • unreachable_switch_default
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:448:19 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:541:23 • curly_braces_in_flow_control_structures
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:557:9 • use_super_parameters
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:680:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:681:45 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:685:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:686:45 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:690:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:691:45 • deprecated_member_use
+   info • 'opacity' is deprecated and shouldn't be used. Use .a. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:694:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:695:45 • deprecated_member_use
+warning • The value of the local variable 'getBox' isn't used. Try removing the variable or using it • lib/generated_widget.dart:725:30 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:848:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:849:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:856:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:857:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:864:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:865:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:872:30 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:873:30 • deprecated_member_use
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:929:9 • use_super_parameters
+warning • This default clause is covered by the previous cases. Try removing the default clause, or restructuring the preceding patterns • lib/generated_widget.dart:1124:17 • unreachable_switch_default
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1275:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1435:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1442:32 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1480:30 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1481:30 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1488:30 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1489:30 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1502:28 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1503:34 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1531:35 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1532:35 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1539:35 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1540:33 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1553:28 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1554:34 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1582:38 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1583:40 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1590:40 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1591:38 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1604:28 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1605:34 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1660:37 • deprecated_member_use
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:1688:9 • use_super_parameters
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:1751:9 • use_super_parameters
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1793:15 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1794:15 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1795:15 • deprecated_member_use
+   info • 'alpha' is deprecated and shouldn't be used. Use (*.a * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1796:15 • deprecated_member_use
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1801:15 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1802:15 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1803:15 • deprecated_member_use
+   info • 'opacity' is deprecated and shouldn't be used. Use .a. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1804:19 • deprecated_member_use
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:1829:7 • curly_braces_in_flow_control_structures
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:1895:9 • use_super_parameters
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1926:36 • deprecated_member_use
+   info • Use interpolation to compose strings and values. Try using string interpolation to build the composite string • lib/generated_widget.dart:1929:11 • prefer_interpolation_to_compose_strings
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1930:24 • deprecated_member_use
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1931:24 • deprecated_member_use
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1932:24 • deprecated_member_use
+   info • 'alpha' is deprecated and shouldn't be used. Use (*.a * 255.0).round().clamp(0, 255). Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:1934:30 • deprecated_member_use
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           23.4s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,178ms
+D/DecorView[](22404): getWindowModeFromSystem  windowmode is 1
+I/ForceDarkHelperStubImpl(22404): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+I/ForceDarkHelperStubImpl(22404): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@e6f428d, reason: AppDarkModeEnable
+D/DecorView[](22404): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](22404): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (22404): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=452ms latency=434ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=3 wall=427ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (22404): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=1ms latency=887ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=3 wall=427ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=452ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(22404): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(22404): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (22404): PerfMonitor longMsg : seq=8 plan=21:19:29.106 late=454ms wall=1678ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (22404): PerfMonitor doFrame : time=1678ms vsyncFrame=0 latency=454ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1678ms seq=8 late=454ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(22404): Skipped 95 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(22404): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0xca20cbb, mIsProjectionMode = false
+W/Looper  (22404): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1589ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (22404): 00:00 +0: Performance Benchmark
+E/hmark_containe(22404): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(22404): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(22404): setSchedFifo pid:22404, mode:3
+D/DecorView[](22404): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](22404): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](22404): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(22404): Installing profile for com.example.benchmark_container
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4489µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3904µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4195µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4412µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3796µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4080µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3276µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3520µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3137µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3391µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4168µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4161µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3620µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3937µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4356µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4361µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4286µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3439µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4193µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3427µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3752µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3390µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4299µs
+[spm]: ProfilerData event received.
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3128µs
+[spm]: ProfilerData event received.
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4251µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4286µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4285µs
+[spm]: ProfilerData event received.
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 3902µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 2773µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (22404): [SPM:perf] 698a51a  buildSpan: 4237µs
+I/flutter (22404): [spm] Performance monitoring completed for 698a51a
+I/flutter (22404): 01:10 +1: (tearDownAll)
+I/flutter (22404): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/2352/redmi9t/raw/20260912-180255/rev_006_411d2fe6/e8.jsonl
+[spm]: Reverting injection...
+69 issues found. (ran in 0.5s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:42823/l0h9SZooJ10=/
+[spm]: Detected VM service URI: ws://127.0.0.1:42823/l0h9SZooJ10=/ws
+VMServiceFlutterDriver: Isolate found with number: 1835051977957047
+VMServiceFlutterDriver: Isolate 1835051977957047 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

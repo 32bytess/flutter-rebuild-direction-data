@@ -1,0 +1,125 @@
+// ignore_for_file: unused_import, unused_element
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'dependencies.dart';
+
+class GeneratedWidget extends StatefulWidget {
+  const GeneratedWidget({super.key});
+
+  @override
+  State<GeneratedWidget> createState() => _GeneratedWidgetState();
+}
+class _GeneratedWidgetState extends State<GeneratedWidget> {
+  late String _label;
+  late String _value;
+
+  @override
+  void initState() {
+    super.initState();
+    _label = fixtureLabel;
+    _value = fixtureValue;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget Function(BuildContext)> wrapItemBuilders = [
+      (ctx) => BBText(
+            _value,
+            style: Theme.of(ctx).textTheme.bodyMedium?.copyWith(
+              color: Theme.of(ctx).colorScheme.onSurface,
+            ),
+          ),
+      (ctx) => InkWell(
+            onTap: () {
+              Clipboard.setData(ClipboardData(text: _value));
+              ScaffoldMessenger.of(ctx).showSnackBar(
+                SnackBar(
+                  content: Text('Copied $_label'),
+                  duration: const Duration(seconds: 2),
+                ),
+              );
+            },
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                BBText(
+                  'Copy',
+                  style: Theme.of(ctx).textTheme.bodyMedium?.copyWith(
+                    color: Theme.of(ctx).colorScheme.primary,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(width: 4),
+                Icon(
+                  Icons.copy,
+                  size: 16,
+                  color: Theme.of(ctx).colorScheme.primary,
+                ),
+              ],
+            ),
+          ),
+    ];
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        BBText(
+          _label,
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          ),
+        ),
+        const SizedBox(height: 4),
+        Wrap(
+          spacing: 4,
+          runSpacing: 4,
+          children: wrapItemBuilders
+              .map((itemBuilder) => itemBuilder(context))
+              .toList(),
+        ),
+      ],
+    );
+  }
+}
+class BBText extends StatelessWidget {
+  const BBText(
+    this.text, {
+    super.key,
+    required this.style,
+    this.maxLines,
+    this.color,
+    this.textAlign,
+    this.overflow,
+  });
+
+  final String text;
+  final int? maxLines;
+  final TextStyle? style;
+  final Color? color;
+  final TextAlign? textAlign;
+  final TextOverflow? overflow;
+
+  @override
+  Widget build(BuildContext context) {
+    final effectiveStyle = style?.copyWith(color: color);
+
+    if (maxLines == null) {
+      return Text(
+        text,
+        style: effectiveStyle,
+        textAlign: textAlign,
+        softWrap: true,
+        overflow: overflow,
+      );
+    }
+
+    return Text(
+      text,
+      style: effectiveStyle,
+      maxLines: maxLines,
+      textAlign: textAlign,
+      softWrap: true,
+      overflow: overflow,
+    );
+  }
+}

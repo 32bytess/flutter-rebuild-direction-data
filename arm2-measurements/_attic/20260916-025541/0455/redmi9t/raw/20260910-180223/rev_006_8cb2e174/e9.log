@@ -1,0 +1,404 @@
+# sample_id=0455/rev_006_8cb2e174 exec_index=9 ok=False perf_lines=30 vm_events=30 battery_pct=73 soc_temp_millic=38300 battery_temp_c=33.1 charging=False preflight_started=2026-09-11T14:27:20.062915+00:00 started=2026-09-11T14:27:22.736075+00:00 ts=2026-09-11T14:29:23.798350+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (107.0.0 available)
+  analyzer 13.0.0 (14.3.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • The type parameter name 'State' matches a visible type name. Try changing the type parameter name to not match an existing type • lib/dependencies.dart:89:19 • avoid_types_as_parameter_names
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/dependencies.dart:145:3 • prefer_const_constructors_in_immutables
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/dependencies.dart:166:3 • prefer_const_constructors_in_immutables
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/dependencies.dart:187:3 • prefer_const_constructors_in_immutables
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/dependencies.dart:206:3 • prefer_const_constructors_in_immutables
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/dependencies.dart:225:3 • prefer_const_constructors_in_immutables
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/generated_widget.dart:11:3 • prefer_const_constructors_in_immutables
+   info • 'MaterialStatePropertyAll' is deprecated and shouldn't be used. Use WidgetStatePropertyAll instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre. Try replacing the use of the deprecated member with the replacement • lib/generated_widget.dart:104:20 • deprecated_member_use
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           21.4s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,466ms
+D/MiuiMultiWindowUtils(17494): freeform resolution args raw data:{  "zizhan":{    "freeform_args": {      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.168,"left_margin":0.484},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.5643,"original_scale":0.74,"top_margin":0.1222,"left_margin":0.59745},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.2596,"left_margin":0.2624},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.604,"top_margin":0.213,"left_margin":0.3758}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.74,"top_margin":0.0753,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":1,"original_scale":0.5756,"top_margin":-1,"left_margin":0.0753},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":0.0753,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6847,"original_scale":0.587,"top_margin":-1,"left_margin":0.0753}}    },    "mini_freeform_args":{      "inner":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.147},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.165},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.165}      },      "outer":{        "vertical_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "horizontal_portrait":{"aspect_ratio":0.626, "original_ratio":0.26},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.293},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.293}}    }  },  "wide_default":{    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":0.125,"left_margin":0.392},        "horizontal_portrait":{"aspect_ratio":0.625, "original_ratio":0.5806,"original_scale":0.7574,"top_margin":-1,"left_margin":0.6415},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":0.125,"left_margin":0.206},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":1,"original_scale":0.5153,"top_margin":-1,"left_margin":0.456}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.144},        "vertical_landscape":{"aspect_ratio":-1, "original_ratio":0.144},        "horizontal_landscape":{"aspect_ratio":-1, "original_ratio":0.144}    }  },  "narrow_default": {    "freeform_args": {        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":1,"original_scale":0.7182,"top_margin":0.142,"left_margin":-1},        "horizontal_portrait":{"aspect_ratio":0.8, "original_ratio":1,"original_scale":0.7182,"top_margin":-1,"left_margin":0.05},        "vertical_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":0.142,"left_margin":-1},        "horizontal_landscape":{"aspect_ratio":1.6, "original_ratio":0.6545,"original_scale":0.4473,"top_margin":-1,"left_margin":0.05}    },    "mini_freeform_args":{        "vertical_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "horizontal_portrait":{"aspect_ratio":0.5625, "original_ratio":0.3},        "vertical_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3},        "horizontal_landscape":{"aspect_ratio":1.7778, "original_ratio":0.3}    }  },  "regular_default": {    "freeform_args": {      "vertical_portrait":{"aspect_ratio":0.625, "original_ratio":1,"original_scale":0.7,"top_margin":0.109,"left_margin":-1},      "horizontal_portrait":{"aspect_ratio":0.6667, "original_ratio":1,"original_scale":0.6102,"top_margin":-1,"left_margin":0.026},      "vertical_landscape":{"asp
+E/MiuiMultiWindowUtils(17494): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(17494): true
+D/MULTI_WINDOW_SWITCH_ENABLED(17494): false
+D/IS_CTS_MODE(17494): true
+D/MULTI_WINDOW_SWITCH_ENABLED(17494): false
+D/IS_CTS_MODE(17494): true
+D/MULTI_WINDOW_SWITCH_ENABLED(17494): false
+D/DecorView[](17494): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](17494): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](17494): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (17494): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=336ms latency=325ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=3 wall=318ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (17494): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=662ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=3 wall=318ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=336ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(17494): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(17494): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (17494): PerfMonitor longMsg : seq=8 plan=17:28:00.442 late=335ms wall=1660ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (17494): PerfMonitor doFrame : time=1660ms vsyncFrame=0 latency=335ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1660ms seq=8 late=335ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(17494): Skipped 95 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(17494): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x739554a, mIsProjectionMode = false
+W/Looper  (17494): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1587ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (17494): 00:00 +0: Performance Benchmark
+E/hmark_containe(17494): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(17494): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(17494): setSchedFifo pid:17494, mode:3
+D/DecorView[](17494): onWindowFocusChanged hasWindowFocus true
+I/flutter (17494): type 'BoxParentData' is not a subtype of type 'FlexParentData' in type cast
+I/flutter (17494): #0      Flexible.applyParentData (package:flutter/src/widgets/basic.dart:6069)
+I/flutter (17494): #1      RenderObjectElement._updateParentData (package:flutter/src/widgets/framework.dart:6901)
+I/flutter (17494): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6945)
+I/flutter (17494): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (17494): #4      SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7114)
+I/flutter (17494): #5      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #6      Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #8      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #9      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #10     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #11     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #12     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #13     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #14     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #15     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #16     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #17     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #18     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #19     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #20     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #21     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #22     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #23     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #24     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #25     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #26     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #27     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #28     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #29     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #30     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #31     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #32     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #33     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #34     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #35     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #36     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #37     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #38     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #39     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #40     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #41     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #42     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #43     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #44     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #45     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #46     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #47     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #48     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #49     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #50     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #51     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #52     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #53     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #54     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #55     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #56     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #57     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #58     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #59     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #60     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #61     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #62     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #63     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #64     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #65     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #66     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #67     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #68     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #69     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #70     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #71     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #72     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #73     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #74     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #75     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #76     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #77     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #78     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #79     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #80     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #81     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #82     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #83     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #84     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #85     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #86     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #87     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #88     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #89     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #90     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #91     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #92     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #93     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #94     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #95     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #96     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #97     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #98     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #99     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): type 'BoxParentData' is not a subtype of type 'FlexParentData' in type cast
+I/flutter (17494): #0      Flexible.applyParentData (package:flutter/src/widgets/basic.dart:6069)
+I/flutter (17494): #1      RenderObjectElement._updateParentData (package:flutter/src/widgets/framework.dart:6901)
+I/flutter (17494): #2      RenderObjectElement.attachRenderObject (package:flutter/src/widgets/framework.dart:6945)
+I/flutter (17494): #3      RenderObjectElement.mount (package:flutter/src/widgets/framework.dart:6801)
+I/flutter (17494): #4      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #5      Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #6      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5858)
+I/flutter (17494): #7      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #8      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #9      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #10     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #11     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #12     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #13     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #14     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #15     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #16     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #17     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #18     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #19     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #20     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #21     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #22     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #23     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #24     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #25     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #26     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #27     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #28     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #29     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #30     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #31     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #32     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #33     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #34     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #35     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #36     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #37     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #38     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #39     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #40     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #41     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #42     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #43     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #44     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #45     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #46     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #47     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+D/DecorView[](17494): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](17494): updateDecorCaptionStatus displayWindowDecor is false
+I/flutter (17494): #48     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #49     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #50     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #51     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #52     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #53     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #54     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #55     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #56     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #57     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #58     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #59     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #60     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #61     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #62     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #63     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #64     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #65     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #66     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #67     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #68     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (17494): #69     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #70     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #71     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #72     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #73     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #74     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #75     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #76     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #77     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #78     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #79     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #80     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #81     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #82     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #83     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #84     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #85     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #86     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #87     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #88     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #89     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #90     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #91     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (17494): #92     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (17494): #93     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (17494): #94     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (17494): #95     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (17494): #96     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (17494): #97     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (17494): #98     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (17494): #99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+D/ProfileInstaller(17494): Installing profile for com.example.benchmark_container
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 864µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 575µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 685µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 704µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 533µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 841µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 480µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 920µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 950µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 957µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 1067µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 842µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 715µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 527µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 682µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 776µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 838µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 542µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 844µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 807µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 987µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 552µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 1121µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 805µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 595µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 1113µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 888µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 707µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 568µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (17494): [SPM:perf] 698a51a  buildSpan: 753µs
+I/flutter (17494): [spm] Performance monitoring completed for 698a51a
+I/flutter (17494): Multiple exceptions (2) were detected during the running of the current test, and at least one was unexpected.
+I/flutter (17494): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter (17494): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter (17494): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter (17494): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter (17494): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter (17494): <asynchronous suspension>
+I/flutter (17494): (elided 6 frames from dart:async)
+I/flutter (17494): 01:10 +0: Performance Benchmark [E]
+I/flutter (17494):   Test failed. See exception logs above.
+I/flutter (17494):   The test description was: Performance Benchmark
+I/flutter (17494):   
+I/flutter (17494): 01:10 +0 -1: (tearDownAll)
+I/flutter (17494): 01:11 +1 -1: Some tests failed.
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/0455/redmi9t/raw/20260910-180223/rev_006_8cb2e174/e9.jsonl
+[spm]: Reverting injection...
+10 issues found. (ran in 0.6s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:39851/MRtKRU2V_uE=/
+[spm]: Detected VM service URI: ws://127.0.0.1:39851/MRtKRU2V_uE=/ws
+VMServiceFlutterDriver: Isolate found with number: 2588624878863883
+VMServiceFlutterDriver: Isolate 2588624878863883 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

@@ -1,0 +1,869 @@
+# sample_id=2411/rev_015_90ded36f exec_index=8 ok=False perf_lines=30 vm_events=30 battery_pct=80 soc_temp_millic=44800 battery_temp_c=32.7 charging=False preflight_started=2026-09-13T11:37:08.578461+00:00 started=2026-09-13T11:37:11.074889+00:00 ts=2026-09-13T11:39:14.165862+00:00
+[spm]: Running flutter analyze...
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 100.0.0 (108.0.0 available)
+  analyzer 13.0.0 (14.4.0 available)
+  async 2.13.0 (2.13.1 available)
+  clock 1.1.2 (1.1.3 available)
+  cupertino_icons 1.0.8 (1.0.9 available)
+  glob 2.1.3 (2.2.0 available)
+  lints 6.0.0 (6.1.0 available)
+  matcher 0.12.19 (0.12.20 available)
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.0 (1.19.0 available)
+  package_config 2.2.0 (3.0.0 available)
+  platform 3.1.6 (3.2.0 available)
+  process 5.0.5 (5.0.6 available)
+  pub_semver 2.2.0 (2.2.1 available)
+  source_span 1.10.1 (1.10.2 available)
+  stack_trace 1.12.1 (1.12.2 available)
+  test_api 0.7.11 (0.7.14 available)
+  vector_math 2.2.0 (2.4.2 available)
+  vm_service 15.0.2 (15.3.0 available)
+  webdriver 3.1.0 (3.2.0 available)
+  yaml 3.1.3 (3.1.4 available)
+Got dependencies!
+21 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing lib...                                                
+
+   info • The part-of directive uses a library name. Try converting the directive to use the URI of the library • lib/dependencies.dart:46:1 • use_string_in_part_of_directives
+   info • Library names are not necessary. Remove the library name • lib/generated_widget.dart:2:9 • unnecessary_library_name
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/generated_widget.dart:11:3 • prefer_const_constructors_in_immutables
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           19.8s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (26.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,205ms
+E/MiuiMultiWindowUtils(30136): initFreeFormResolutionArgs failed, device is lime
+D/IS_CTS_MODE(30136): true
+D/MULTI_WINDOW_SWITCH_ENABLED(30136): false
+D/IS_CTS_MODE(30136): true
+D/MULTI_WINDOW_SWITCH_ENABLED(30136): false
+D/IS_CTS_MODE(30136): true
+D/MULTI_WINDOW_SWITCH_ENABLED(30136): false
+D/DecorView[](30136): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30136): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30136): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (30136): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=352ms latency=363ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=1 wall=352ms seq=4 late=363ms h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=352ms seq=4 late=363ms h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=375ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (30136): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=718ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=1 wall=352ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=352ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=375ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=352ms seq=4 h=android.app.ActivityThread$H w=159)
+D/SurfaceView(30136): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(30136): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (30136): PerfMonitor longMsg : seq=8 plan=14:37:47.771 late=355ms wall=1751ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (30136): PerfMonitor doFrame : time=1751ms vsyncFrame=0 latency=355ms procState=-1 historyMsgCount=4 (msgIndex=1 wall=1751ms seq=8 late=355ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver)
+I/Choreographer(30136): Skipped 99 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(30136): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x739554a, mIsProjectionMode = false
+W/Looper  (30136): PerfMonitor doFrame : time=2ms vsyncFrame=0 latency=1665ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (30136): 00:00 +0: Performance Benchmark
+E/hmark_containe(30136): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(30136): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(30136): setSchedFifo pid:30136, mode:3
+D/DecorView[](30136): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](30136): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](30136): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(30136): Installing profile for com.example.benchmark_container
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #6      StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30136): #7      ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #8      Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #9      Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #10     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #11     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #12     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #13     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #14     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #15     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #16     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #17     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #18     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #19     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #20     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #21     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #22     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #23     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #24     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #25     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #26     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #27     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #28     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #29     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #30     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #31     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #32     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #33     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7264)
+I/flutter (30136): #34     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7279)
+I/flutter (30136): #35     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #36     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #37     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #38     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #39     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #40     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #41     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #42     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #43     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #44     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #45     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #46     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #47     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30136): #48     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #49     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #50     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #51     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #52     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #53     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #54     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #55     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #56     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #57     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #58     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #59     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #60     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #61     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #62     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #63     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #64     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #65     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #66     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #67     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30136): #68     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #69     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #70     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #71     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (30136): #72     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #73     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #74     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #75     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #76     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #77     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #78     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #79     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #80     SingleChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7115)
+I/flutter (30136): #81     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #82     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #83     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #84     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #85     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #86     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #87     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30136): #88     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #89     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #90     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #91     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): #92     StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #93     Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #94     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5799)
+I/flutter (30136): #95     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5973)
+I/flutter (30136): #96     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5793)
+I/flutter (30136): #97     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4587)
+I/flutter (30136): #98     Element.updateChild (package:flutter/src/widgets/framework.dart:4059)
+I/flutter (30136): #99     ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5841)
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 16065µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3521µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3740µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3727µs
+[spm]: ProfilerData event received.
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 2716µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3001µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3700µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3526µs
+[spm]: ProfilerData event received.
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3581µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3619µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 2950µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3213µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3574µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3789µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3552µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3031µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3829µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3518µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3065µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3834µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3610µs
+[spm]: ProfilerData event received.
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 2809µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3448µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3595µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3701µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3551µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 2844µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3438µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 3822µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): type '_Stub' is not a subtype of type 'FlutterClawConfig'
+I/flutter (30136): #0      _GeneratedWidgetState.build (package:benchmark_container/generated_widget.dart:108)
+I/flutter (30136): #1      StatefulElement.build (package:flutter/src/widgets/framework.dart:5931)
+I/flutter (30136): #2      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5817)
+I/flutter (30136): #3      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5982)
+I/flutter (30136): #4      Element.rebuild (package:flutter/src/widgets/framework.dart:5529)
+I/flutter (30136): #5      BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750)
+I/flutter (30136): #6      BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807)
+I/flutter (30136): #7      BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111)
+I/flutter (30136): #8      WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1571)
+I/flutter (30136): #9      RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:509)
+I/flutter (30136): #10     SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1430)
+I/flutter (30136): #11     SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1345)
+I/flutter (30136): #12     LiveTestWidgetsFlutterBinding.handleDrawFrame (package:flutter_test/src/binding.dart:2811)
+I/flutter (30136): #13     SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1198)
+I/flutter (30136): #17     _invoke (dart:ui/hooks.dart:425)
+I/flutter (30136): #18     PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:447)
+I/flutter (30136): #19     _drawFrame (dart:ui/hooks.dart:395)
+I/flutter (30136): (elided 3 frames from dart:async)
+[spm]: ProfilerData event received.
+I/flutter (30136): [SPM:perf] 698a51a  buildSpan: 2898µs
+I/flutter (30136): [spm] Performance monitoring completed for 698a51a
+I/flutter (30136): Multiple exceptions (31) were detected during the running of the current test, and at least one was unexpected.
+I/flutter (30136): #0      debugPrintStack (package:flutter/src/foundation/assertions.dart:1213)
+I/flutter (30136): #1      FlutterError.dumpErrorToConsole (package:flutter/src/foundation/assertions.dart:1033)
+I/flutter (30136): #2      _defaultTestExceptionReporter (package:flutter_test/src/test_exception_reporter.dart:29)
+I/flutter (30136): #3      new IntegrationTestWidgetsFlutterBinding.<anonymous closure> (package:integration_test/integration_test.dart:91)
+I/flutter (30136): #4      TestWidgetsFlutterBinding._createTestCompletionHandler.<anonymous closure> (package:flutter_test/src/binding.dart:1713)
+I/flutter (30136): <asynchronous suspension>
+I/flutter (30136): (elided 6 frames from dart:async)
+I/flutter (30136): 01:12 +0: Performance Benchmark [E]
+I/flutter (30136):   Test failed. See exception logs above.
+I/flutter (30136):   The test description was: Performance Benchmark
+I/flutter (30136):   
+I/flutter (30136): 01:12 +0 -1: (tearDownAll)
+I/flutter (30136): 01:13 +1 -1: Some tests failed.
+I/Choreographer(30136): Skipped 57 frames!  The application may be doing too much work on its main thread.
+W/Looper  (30136): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=966ms procState=-1 historyMsgCount=8
+I/OpenGLRenderer(30136): Davey! duration=976ms; Flags=0, FrameTimelineVsyncId=13718623, IntendedVsync=419566095276472, Vsync=419567045276434, InputEventId=0, HandleInputStart=419567061940571, AnimationStart=419567061946196, PerformTraversalsStart=419567061950103, DrawStart=419567062957759, FrameDeadline=419566111943138, FrameInterval=419567061635155, FrameStartTime=16666666, SyncQueued=419567063654530, SyncStart=419567063907238, IssueDrawCommandsStart=419567064250832, SwapBuffers=419567065471769, FrameCompleted=419567071619373, DequeueBufferDuration=77344, QueueBufferDuration=1103542, GpuCompleted=419567071619373, SwapBuffersCompleted=419567067382342, DisplayPresentTime=0, 
+[SPM:shot] wrote <ROOT>/dataset-new_samples/2411/redmi9t/shots/2411__rev_015_90ded36f.png (28116 bytes)
+Failure Details:
+Failure in method: Performance Benchmark
+Instance of 'FlutterErrorDetails'
+end of failure 1
+
+
+
+[spm]: Saved 30 profiler events to <ROOT>/dataset-new_samples/2411/redmi9t/raw/20260913-143611/rev_015_90ded36f/e8.jsonl
+[spm]: Reverting injection...
+3 issues found. (ran in 0.8s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:40629/fBKe5z-y1Lk=/
+[spm]: Detected VM service URI: ws://127.0.0.1:40629/fBKe5z-y1Lk=/ws
+VMServiceFlutterDriver: Isolate found with number: 2461141788210207
+VMServiceFlutterDriver: Isolate 2461141788210207 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.
+VMServiceFlutterDriver: request_data message is taking a long time to complete...

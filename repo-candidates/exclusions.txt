@@ -1,0 +1,21 @@
+# Repositories barred from the v2 corpus, permanently.
+#
+# One `owner/name` per line; everything after `#` is a comment. Read by
+# `collector.discovery` (before anything is cloned), by `corpus_v2.clone`, and by
+# `corpus_v2.config.selected()` -- so an entry here holds for every phase without any
+# command needing to remember a flag. Use `--exclude` instead for a single run.
+#
+# The 8 repositories `samples/` was built from are NOT listed here: they are derived
+# from the sample manifests themselves by `corpus_v2.config.corpus_keys()`, so they
+# cannot drift out of sync with `samples/`. Listing one again is harmless.
+#
+# `owner/name`, `owner_name` and a GitHub URL all resolve to the same repository.
+
+# UNBARRED 2026-08-28, deliberately. Both lines below were commented out rather than
+# deleted, so the original judgement stays readable. They had been barred the same day
+# for yield: waterfly-iii spent 383 of 656 commits to produce 5 groups, and Flick was
+# abandoned at 746 of 1002 with the walked window's metrics lost. The decision to walk
+# them anyway was taken knowing that. Re-enable by removing the leading `#`.
+#
+# dreautall/waterfly-iii   # abandoned mid-walk 2026-08-28 at commit 383/656; 383 commits bought 5 groups
+# moss-apps/Flick          # abandoned mid-walk 2026-08-28 at commit 746/1002; the walked window's metrics were lost

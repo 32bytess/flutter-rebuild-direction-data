@@ -1,0 +1,176 @@
+# sample_id=14/mutation_7 exec_index=8 ok=True perf_lines=30 vm_events=30 battery_pct=74 soc_temp_millic=41700 battery_temp_c=31.8 charging=False preflight_started=2026-07-31T15:52:42.361013+00:00 started=2026-07-31T15:52:44.691820+00:00 ts=2026-07-31T15:54:50.603741+00:00
+[spm]: Running flutter analyze...
+Analyzing lib...                                                
+
+   info • The import of 'package:flutter/cupertino.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/dependencies.dart:3:8 • unnecessary_import
+   info • Parameters ''key', 'onPressed', 'onLongPress', 'onHover', 'onFocusChange', 'focusNode', 'autofocus', and 'child'' could be super parameters. Trying converting ''key', 'onPressed', 'onLongPress', 'onHover', 'onFocusChange', 'focusNode', 'autofocus', and 'child'' to super parameters • lib/dependencies.dart:11:3 • use_super_parameters
+   info • The variable name 'choose_class_time_dialog_title' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:43:14 • non_constant_identifier_names
+   info • The variable name 'class_single' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:47:10 • non_constant_identifier_names
+   info • The constant name 'MAX_CLASSES' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:51:20 • constant_identifier_names
+   info • The constant name 'WEEK_WITHOUT_BIAS' isn't a lowerCamelCase identifier. Try changing the name to follow the lowerCamelCase style • lib/dependencies.dart:55:29 • constant_identifier_names
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:7:9 • use_super_parameters
+   info • The local variable '_node' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:22:9 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_startController' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:23:33 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_endController' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:26:33 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_node' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:150:9 • no_leading_underscores_for_local_identifiers
+   info • Parameter 'key' could be a super parameter. Trying converting 'key' to a super parameter • lib/generated_widget.dart:179:9 • use_super_parameters
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           23.1s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (61.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,907ms
+D/SurfaceView(20513): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(20513): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (20513): PerfMonitor longMsg : seq=8 plan=18:53:25.813 late=459ms wall=1698ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (20513): PerfMonitor doFrame : time=1698ms vsyncFrame=0 latency=459ms procState=-1 historyMsgCount=7 (msgIndex=1 wall=437ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=2 wall=437ms seq=4 h=android.app.ActivityThread$H w=159) (msgIndex=3 wall=1698ms seq=8 late=459ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=4 wall=437ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer(20513): Skipped 96 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(20513): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0x4d86cce, mIsProjectionMode = false
+W/Looper  (20513): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1613ms procState=-1 historyMsgCount=4
+[spm]: Connected to Dart VM service.
+I/flutter (20513): 00:00 +0: Performance Benchmark
+E/hmark_containe(20513): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(20513): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(20513): setSchedFifo pid:20513, mode:3
+D/DecorView[](20513): onWindowFocusChanged hasWindowFocus true
+D/DecorView[](20513): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](20513): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(20513): Installing profile for com.example.benchmark_container
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8992µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9905µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9181µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8996µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9120µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9079µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 11604µs
+[spm]: ProfilerData event received.
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9746µs
+[spm]: ProfilerData event received.
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9057µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9142µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 10012µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9053µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8938µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9204µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8734µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9275µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9767µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9027µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9080µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9851µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9170µs
+[spm]: ProfilerData event received.
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8737µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8886µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 10050µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 8881µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9938µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9081µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 9338µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 10881µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+I/flutter (20513): setState 698a51a
+I/flutter (20513): [SPM:perf] 698a51a  buildSpan: 11972µs
+I/flutter (20513): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (20513): 01:10 +1: (tearDownAll)
+I/flutter (20513): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset/14/redmi9t/raw/20260731-171329/mutation_7/e8.jsonl
+[spm]: Reverting injection...
+12 issues found. (ran in 1.1s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:35099/IQVWTGZ4pVM=/
+[spm]: Detected VM service URI: ws://127.0.0.1:35099/IQVWTGZ4pVM=/ws
+VMServiceFlutterDriver: Isolate found with number: 2291070895571131
+VMServiceFlutterDriver: Isolate 2291070895571131 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.

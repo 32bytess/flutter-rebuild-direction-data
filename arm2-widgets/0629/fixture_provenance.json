@@ -1,0 +1,22 @@
+{
+  "anchor": "a8ce423c",
+  "bindings": {
+    "fixtureActiveConversation": {
+      "decl": "Conversation? fixtureActiveConversation = null;",
+      "expr": "null",
+      "note": "nullable kept null: flipping it changes which branch build takes",
+      "origin": "default",
+      "rule": "protocol_constant"
+    },
+    "fixtureGroupedConversations": {
+      "decl": "Map<String, List<Conversation>> fixtureGroupedConversations = {};",
+      "expr": null,
+      "note": "`Conversation` is a class declared in the transplant; constructing one has cost, which is what this study measures",
+      "origin": "none",
+      "rule": "unrecoverable",
+      "rule_id": "class_standin_authored"
+    }
+  },
+  "repo": "abdulmominsakib/localmind",
+  "values_version": "48983f69cabd6eae"
+}

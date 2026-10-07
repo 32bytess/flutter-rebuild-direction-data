@@ -1,0 +1,224 @@
+# sample_id=42/mutation_1 exec_index=6 ok=True perf_lines=30 vm_events=30 battery_pct=74 soc_temp_millic=41700 battery_temp_c=30.5 charging=False preflight_started=2026-08-14T22:22:58.063964+00:00 started=2026-08-14T22:23:00.445557+00:00 ts=2026-08-14T22:25:01.354652+00:00
+[spm]: Running flutter analyze...
+Analyzing lib...                                                
+
+   info • The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/dependencies.dart:4:8 • unnecessary_import
+   info • The import of 'package:flutter/painting.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/dependencies.dart:6:8 • unnecessary_import
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/dependencies.dart:73:7 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/dependencies.dart:75:7 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/dependencies.dart:77:7 • curly_braces_in_flow_control_structures
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/dependencies.dart:79:7 • curly_braces_in_flow_control_structures
+   info • The import of 'package:flutter/widgets.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/generated_widget.dart:3:8 • unnecessary_import
+   info • The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/generated_widget.dart:4:8 • unnecessary_import
+   info • The import of 'package:flutter/rendering.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/generated_widget.dart:5:8 • unnecessary_import
+   info • The import of 'package:flutter/painting.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive • lib/generated_widget.dart:6:8 • unnecessary_import
+   info • The local variable '_curPageChildCount' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:57:9 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curPageWidth' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:58:12 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curArrowWidth' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:59:12 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curArrowCount' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:60:9 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curPageChildCount' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:104:9 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curArrowWidth' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:108:12 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curArrowCount' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:109:9 • no_leading_underscores_for_local_identifiers
+   info • The local variable '_curPageWidth' starts with an underscore. Try renaming the variable to not start with an underscore • lib/generated_widget.dart:119:12 • no_leading_underscores_for_local_identifiers
+   info • Unnecessary instance of 'Container'. Try removing the 'Container' (but not its children) from the widget tree • lib/generated_widget.dart:145:16 • avoid_unnecessary_containers
+   info • Use a 'SizedBox' to add whitespace to a layout. Try using a 'SizedBox' rather than a 'Container' • lib/generated_widget.dart:160:34 • sized_box_for_whitespace
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • lib/generated_widget.dart:191:31 • curly_braces_in_flow_control_structures
+   info • Use a 'SizedBox' to add whitespace to a layout. Try using a 'SizedBox' rather than a 'Container' • lib/generated_widget.dart:195:34 • sized_box_for_whitespace
+
+[spm]: Injecting profiler code...
+[spm]: Starting app...
+Running Gradle task 'assembleProfile'...                        
+Running Gradle task 'assembleProfile'...                           22.0s
+✓ Built build/app/outputs/flutter-apk/app-profile.apk (61.8MB)
+Installing build/app/outputs/flutter-apk/app-profile.apk...      1,897ms
+D/DecorView[](23066): getWindowModeFromSystem  windowmode is 1
+I/ForceDarkHelperStubImpl(23066): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@facf14f, reason: AppDarkModeEnable
+I/ForceDarkHelperStubImpl(23066): setViewRootImplForceDark: false for com.example.benchmark_container.MainActivity@facf14f, reason: AppDarkModeEnable
+D/DecorView[](23066): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23066): updateDecorCaptionStatus displayWindowDecor is false
+W/Looper  (23066): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=465ms latency=484ms running=0ms  procState=-1  historyMsgCount=3 (msgIndex=3 wall=465ms seq=3 h=android.app.ActivityThread$H w=110)
+W/Looper  (23066): PerfMonitor looperActivity : package=com.example.benchmark_container/.MainActivity time=0ms latency=950ms running=0ms  procState=-1  historyMsgCount=4 (msgIndex=3 wall=465ms seq=3 h=android.app.ActivityThread$H w=110) (msgIndex=4 wall=465ms seq=4 late=484ms h=android.app.ActivityThread$H w=159)
+D/SurfaceView(23066): UPDATE null, mIsCastMode = false
+D/hw-ProcessState(23066): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Looper  (23066): PerfMonitor longMsg : seq=8 plan=01:23:38.781 late=480ms wall=1783ms running=0ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver procState=-1
+W/Looper  (23066): PerfMonitor doFrame : time=1783ms vsyncFrame=0 latency=480ms procState=-1 historyMsgCount=6 (msgIndex=2 wall=1783ms seq=8 late=480ms h=android.view.Choreographer$FrameHandler c=android.view.Choreographer$FrameDisplayEventReceiver) (msgIndex=3 wall=465ms seq=4 h=android.app.ActivityThread$H w=159)
+I/Choreographer(23066): Skipped 101 frames!  The application may be doing too much work on its main thread.
+D/SurfaceView(23066): UPDATE Surface(name=SurfaceView[com.example.benchmark_container/com.example.benchmark_container.MainActivity])/@0xf0ce70d, mIsProjectionMode = false
+W/Looper  (23066): PerfMonitor doFrame : time=3ms vsyncFrame=0 latency=1686ms procState=-1 historyMsgCount=5
+[spm]: Connected to Dart VM service.
+I/flutter (23066): 00:00 +0: Performance Benchmark
+E/hmark_containe(23066): open libmigui.so failed! dlopen - dlopen failed: library "libmigui.so" not found
+D/hmark_containe(23066): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl(23066): setSchedFifo pid:23066, mode:3
+D/DecorView[](23066): onWindowFocusChanged hasWindowFocus true
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+D/DecorView[](23066): getWindowModeFromSystem  windowmode is 1
+D/DecorView[](23066): updateDecorCaptionStatus displayWindowDecor is false
+D/ProfileInstaller(23066): Installing profile for com.example.benchmark_container
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1771µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1828µs
+[spm]: ProfilerData event received.
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1771µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1635µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 5569µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 2152µs
+[spm]: ProfilerData event received.
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1612µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1780µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1606µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+[spm]: ProfilerData event received.
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1848µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1625µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1731µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1793µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1843µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1675µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+[spm]: ProfilerData event received.
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1645µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+[spm]: ProfilerData event received.
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1775µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1760µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1622µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1823µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1685µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1614µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+[spm]: ProfilerData event received.
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1716µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1554µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1710µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1696µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1880µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+[spm]: ProfilerData event received.
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1707µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1605µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): setState 698a51a
+E/flutter (23066): [ERROR:flutter/flow/layers/transform_layer.cc(15)] TransformLayer is constructed with an invalid matrix.
+[spm]: ProfilerData event received.
+I/flutter (23066): [SPM:perf] 698a51a  buildSpan: 1718µs
+I/flutter (23066): [spm] Performance monitoring completed for 698a51a
+I/flutter (23066): 01:10 +1: (tearDownAll)
+I/flutter (23066): 01:11 +2: All tests passed!
+All tests passed.
+[spm]: Saved 30 profiler events to <ROOT>/dataset/42/redmi9t/raw/20260815-004123/mutation_1/e6.jsonl
+[spm]: Reverting injection...
+22 issues found. (ran in 0.8s)
+WARNING: Your Android app project: app located at: <ROOT>/android/app/build.gradle.kts
+applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
+Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+
+VMServiceFlutterDriver: Connecting to Flutter application at http://127.0.0.1:40761/fAgr-9xejmc=/
+[spm]: Detected VM service URI: ws://127.0.0.1:40761/fAgr-9xejmc=/ws
+VMServiceFlutterDriver: Isolate found with number: 3484770437796971
+VMServiceFlutterDriver: Isolate 3484770437796971 is runnable.
+VMServiceFlutterDriver: Isolate is paused at start.
+VMServiceFlutterDriver: Attempting to resume isolate
+VMServiceFlutterDriver: Connected to Flutter application.

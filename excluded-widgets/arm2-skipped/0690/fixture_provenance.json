@@ -1,0 +1,28 @@
+{
+  "anchor": "2378cf35",
+  "bindings": {
+    "fixtureEngine": {
+      "decl": "late EngineId fixtureEngine;",
+      "expr": "EngineId.system",
+      "origin": "default",
+      "rule": "protocol_constant"
+    },
+    "fixturePlayingVoice": {
+      "decl": "Voice? fixturePlayingVoice = null;",
+      "expr": "null",
+      "note": "nullable kept null: flipping it changes which branch build takes",
+      "origin": "default",
+      "rule": "protocol_constant"
+    },
+    "fixtureVoices": {
+      "decl": "late List<Voice> fixtureVoices;",
+      "expr": null,
+      "note": "`Voice` is a class declared in the transplant; constructing one has cost, which is what this study measures",
+      "origin": "none",
+      "rule": "unrecoverable",
+      "rule_id": "class_standin_authored"
+    }
+  },
+  "repo": "abdulmominsakib/localmind",
+  "values_version": "48983f69cabd6eae"
+}

@@ -1,5 +1,7 @@
 # flutter-rebuild-direction-data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23225516.svg)](https://doi.org/10.5281/zenodo.23225516)
+
 Data for a study of whether a controlled structural change to a Flutter widget makes its rebuild slower or faster: device measurements, the two widget corpora, and the snapshots the analysis starts from.
 
 The code that produced and analysed it is in [`flutter-rebuild-direction`](https://github.com/32bytess/flutter-rebuild-direction). Clone the two side by side. The code finds these folders through symlinks, and its README has the command that creates them.
@@ -32,6 +34,12 @@ The notebooks and the small tables they start from (labelled contrasts, per-exec
 - **Paths.** Logs, JSONL files and manifests recorded absolute paths from the author's machine. Those prefixes are replaced by placeholders: `<ROOT>` for the code repository's root, `<ROOT>/../data` and `<ROOT>/../new_data` for the collector's data directories, and `<ANDROID_SDK>` and `<FLUTTER_SDK>` for the toolchain. Nothing else in a file was changed. Tools that follow a recorded path to the mine's clones cannot run, because the clones are not part of this release.
 - **Generated content.** The arm-1 variants in `arm1-widgets/` were written by Claude Sonnet 5. They were first generated with other models (`codex`, `gemini`); those were dropped and every variant was regenerated with Claude. Their rows are still in `arm1-widgets/mutations.jsonl` (the `backend` field), but no variant file kept here comes from them. The `dependencies.dart` files in `arm2-widgets/` for authored groups were drafted with Claude Sonnet 5 as well; the code repository's README describes how.
 - **Sources.** `SOURCES.md` lists the repositories whose code is in the release. `repo-candidates/` and `arm2-mining/` are raw search and mining records, not a statement of use.
+
+## Citing
+
+If you use this data in research, cite it with the metadata in [CITATION.cff](CITATION.cff). GitHub's "Cite this repository" button reads the same file.
+
+The data is archived on Zenodo, DOI [10.5281/zenodo.23225516](https://doi.org/10.5281/zenodo.23225516).
 
 ## Licence
 
